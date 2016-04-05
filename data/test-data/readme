@@ -1,0 +1,24 @@
+***** Task Descripton ***** 
+
+The Lexical Simplification task consists in ranking a list of near synonyms that have been deemed to fit a context *in an ascending order of complexity* (i.e. simplest first). This judgement should be based on the context as opposed to the near symonyms alone: how commonly a word is used in a particular sense in the given context.  Ties are allowed to indicate words with similar level of difficulty. 
+
+For instance, take the following example where ‘intelligent’ has been deemed to be the simplest option, followed by ‘clever’, followed by a tie between ‘smart’ and ‘bright’:
+"During the siege , George Robertson had appointed Shuja-ul-Mulk , who was a _____ boy only 12 years old and the youngest surviving son of Aman-ul-Mulk , as the ruler of Chitral ."
+
+Substitutes: intelligent; bright; clever; smart
+Gold-ranking: {intelligent}; {clever}; {bright, smart}
+
+***** Contents of Semeval-2012's Task 1 test release: ***** 
+
+--readme: this file
+
+--contexts.xml: input data for the task, containing 1710 contexts (the count starts from 301, to continue from the trial data)
+
+--substitutions: list of substitutions (separated by semi-colons) for each context, one list per line (1710 lists). These include the lexical item itself (e.g. 'bright')  and near-synonyms, as given by Semeval-2007's Lexical Substitution task
+
+--substitutions.gold-rankings: ranked list of substitutions for each context (simplest first), where ties are indicated between {}, one ranked list per line. The ranking was based on the average ranking from 5 human annotators.
+
+ps.: there are a few substitutes named 'pn'. In some cases these are abbreviation for 'pound' (currency or measure), but in others (10 cases), it stands for 'proper noun'. We kept these cases in the list of subtstitutes for consistency reasons, but you can simply rank them at the bottom of the list, as they bear no meaning in the contexts
+
+
+

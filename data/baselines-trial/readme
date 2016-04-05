@@ -1,0 +1,12 @@
+SemEval-2012 Lexical Simplification Task - Baselines on Trial Dataset
+
+This folder contains the output of 3 baselines run on the Trial Dataset in the format of the task specification. The baselines are:
+
+-- no-change
+This baseline simply outputs the rankings as given in the gold-standard of the trial dataset from the SemEval-2007 Lexical Substitution task. It should be noted that this is the dataset that was used as a base to develop corpus for the current task.
+
+-- random
+The candidates are scored using a random function, and ranked accordingly in this baseline.
+
+-- simple-frequency
+The Google Web 1T corpus is queried using the raw surface forms of candidates, which are subsequently ranked in descending order of the number of hits that were found.
