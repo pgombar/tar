@@ -1,300 +1,600 @@
-Sentence 1 rankings: {smart} {bright} {clever} {intelligent}
-Sentence 2 rankings: {light} {clear} {bright} {luminous} {well-lit}
-Sentence 3 rankings: {gleam} {bright} {luminous} {colourful} {brilliant}
-Sentence 4 rankings: {clever} {bright} {intelligent}
-Sentence 5 rankings: {sharp} {bright} {clever} {capable} {motivated} {promising} {most able} {intelligent}
-Sentence 6 rankings: {gifted} {bright} {skilled} {talented} {promising} {up-and-coming} {most talented}
-Sentence 7 rankings: {good} {bright} {hopeful} {positive} {promising} {optimistic}
-Sentence 8 rankings: {deep} {vivid} {bright} {vibrant} {shining} {luminous}
-Sentence 9 rankings: {alight} {bright} {shining}
-Sentence 10 rankings: {smart} {great} {clever} {bright} {brilliant} {intelligent}
-Sentence 11 rankings: {film} {movie} {picture} {production}
-Sentence 12 rankings: {film} {movie} {picture}
-Sentence 13 rankings: {film} {movie} {picture}
-Sentence 14 rankings: {film} {movie} {picture}
-Sentence 15 rankings: {film} {movie} {picture}
-Sentence 16 rankings: {film} {movie} {picture}
-Sentence 17 rankings: {film} {movie} {picture}
-Sentence 18 rankings: {film} {movie} {picture} {documentary}
-Sentence 19 rankings: {film} {movie} {picture}
-Sentence 20 rankings: {film} {movie} {picture} {production}
-Sentence 21 rankings: {take} {occur} {happen}
-Sentence 22 rankings: {take} {risk} {experiment in their roles}
-Sentence 23 rankings: {be} {take} {last} {engage for}
-Sentence 24 rankings: {last} {take} {occupy}
-Sentence 25 rankings: {take} {accept} {include} {consider} {think about}
-Sentence 26 rankings: {run} {risk} {take} {accept} {undergo} {tolerate}
-Sentence 27 rankings: {get} {take} {grasp} {gather} {collect} {pick up}
-Sentence 28 rankings: {take} {grow} {establish itself}
-Sentence 29 rankings: {take} {occur} {happen}
-Sentence 30 rankings: {take} {begin} {start} {assume}
-Sentence 31 rankings: {tight} {small} {too small} {constricted} {constricting} {uncomfortable} {close-fitting}
-Sentence 32 rankings: {low} {tight} {constricted} {pressurised} {high-strung}
-Sentence 33 rankings: {tight} {sparse} {scarce} {constricted} {not easily available}
-Sentence 34 rankings: {close} {tight} {scarce} {constricted} {not easily available}
-Sentence 35 rankings: {tight} {cramped} {too small} {restricted} {constricted} {close-fitting}
-Sentence 36 rankings: {close} {tight} {firmly} {closely}
-Sentence 37 rankings: {tight} {stretched} {compressed} {constricted} {uncomfortable}
-Sentence 38 rankings: {tight} {firmly} {secure} {securely}
-Sentence 39 rankings: {near} {tight} {close} {close to} {close by} {on top of}
-Sentence 40 rankings: {low} {tight} {close} {pressured} {restricted} {constricted}
-Sentence 41 rankings: {bar} {pole} {level} {hurdle} {marker} {barrier} {obstruction}
-Sentence 42 rankings: {bar} {handlebar}
-Sentence 43 rankings: {bar} {pub} {saloon} {hostelry} {drinking house}
-Sentence 44 rankings: {bar} {ban} {exclusion} {prohibition} {restriction}
-Sentence 45 rankings: {bar} {slab} {snack} {block} {biscuit}
-Sentence 46 rankings: {bar} {menu} {banner} {indicator}
-Sentence 47 rankings: {bar} {rod} {pole} {metal} {crossbar} {apparatus}
-Sentence 48 rankings: {bar} {pub} {saloon}
-Sentence 49 rankings: {pub} {bar} {lounge} {drinking lounge}
-Sentence 50 rankings: {bar} {block} {exclude} {prevent} {obstruct}
-Sentence 51 rankings: {cross} {crucifix}
-Sentence 52 rankings: {cross} {x shape} {crucifix} {two intersecting lines}
-Sentence 53 rankings: {x} {cross} {crucifix} {two intersecting lines}
-Sentence 54 rankings: {cross} {hybrid} {hybrid of} {mixture of}
-Sentence 55 rankings: {cross} {crucifix}
-Sentence 56 rankings: {cross} {crucifix}
-Sentence 57 rankings: {cross} {crucifix}
-Sentence 58 rankings: {cross} {segment} {sequence} {transverse} {right angled cut}
-Sentence 59 rankings: {cross} {sample} {mixture} {typical sample} {representative sample}
-Sentence 60 rankings: {angry} {irate} {cross} {annoyed} {irritated}
-Sentence 61 rankings: {at last} {finally} {eventually} {ultimately}
-Sentence 62 rankings: {lastly} {finally} {in conclusion}
-Sentence 63 rankings: {finally} {at last} {eventually} {at long last}
-Sentence 64 rankings: {lastly} {finally} {eventually} {to conclude} {in conclusion}
-Sentence 65 rankings: {also} {lastly} {finally}
-Sentence 66 rankings: {lastly} {at last} {finally} {eventually}
-Sentence 67 rankings: {finally} {at last} {eventually}
-Sentence 68 rankings: {lastly} {at last} {finally} {eventually}
-Sentence 69 rankings: {lastly} {finally} {last of all} {in conclusion}
-Sentence 70 rankings: {lastly} {finally}
-Sentence 71 rankings: {find} {exist} {detect} {present} {evident} {discover}
-Sentence 72 rankings: {find} {feel} {realise} {discover}
-Sentence 73 rankings: {felt} {find} {think} {believe} {discover}
-Sentence 74 rankings: {find} {seek} {locate} {discover} {look for}
-Sentence 75 rankings: {see} {find} {show} {believe} {discover} {recognised as}
-Sentence 76 rankings: {buy} {get} {find} {locate} {discover}
-Sentence 77 rankings: {get} {find} {write} {invent} {obtain} {locate} {look for} {discover}
-Sentence 78 rankings: {find} {feel} {think} {see as} {believe} {consider} {realise is} {perceive as}
-Sentence 79 rankings: {find} {locate} {discover} {calculate} {determine} {ascertain}
-Sentence 80 rankings: {find} {discover}
-Sentence 81 rankings: {fix} {cure} {heal}
-Sentence 82 rankings: {fix} {mend} {repair} {correct} {sort out} {make up for} {compensate for}
-Sentence 83 rankings: {fix} {mend} {solve} {repair} {resolve}
-Sentence 84 rankings: {fix} {heal} {cure} {mend}
-Sentence 85 rankings: {fix} {cure} {patch} {repair} {correct} {resolve}
-Sentence 86 rankings: {fix} {mend} {repair} {correct} {sort out} {put right}
-Sentence 87 rankings: {fix} {mend} {repair}
-Sentence 88 rankings: {fix} {mend} {solve} {correct} {resolve}
-Sentence 89 rankings: {do} {fix} {mend} {solve} {improve} {resolve} {correct}
-Sentence 90 rankings: {fix} {set} {stick} {intent} {determine}
-Sentence 91 rankings: {manage} {be able} {succeed} {endeavour}
-Sentence 92 rankings: {direct} {handle} {manage} {control} {oversee} {organise}
-Sentence 93 rankings: {direct} {handle} {manage} {control} {organise} {look after} {take care of}
-Sentence 94 rankings: {manage} {govern} {control} {organise}
-Sentence 95 rankings: {manage} {direct} {control} {conduct} {organise} {deal with} {coordinate}
-Sentence 96 rankings: {manage} {handle} {control} {organise} {coordinate} {take care of}
-Sentence 97 rankings: {manage} {be able} {success} {undertake} {succeed in}
-Sentence 98 rankings: {manage} {control} {administer} {coordinate}
-Sentence 99 rankings: {manage} {success} {be able} {contrive} {succeed in}
-Sentence 100 rankings: {run} {manage} {direct} {conduct} {control} {coordinate} {administer}
-Sentence 101 rankings: {neat} {good} {clever} {orderly} {well-formulated}
-Sentence 102 rankings: {neat} {smart} {clever}
-Sentence 103 rankings: {neat} {tidy} {simple}
-Sentence 104 rankings: {tidy} {neat} {order} {orderly}
-Sentence 105 rankings: {neat} {tidy} {trim} {simple} {orderly} {compact}
-Sentence 106 rankings: {cool} {neat} {great} {pleasing}
-Sentence 107 rankings: {neat} {cool} {nice} {tidy} {great} {orderly}
-Sentence 108 rankings: {cool} {neat} {great} {clever}
-Sentence 109 rankings: {neat} {tidy} {uniform} {orderly} {ordered}
-Sentence 110 rankings: {neat} {cool} {great} {terrific}
-Sentence 111 rankings: {rich} {full} {detail} {rewarding} {significant}
-Sentence 112 rankings: {rich} {wealthy}
-Sentence 113 rankings: {rich} {wealthy}
-Sentence 114 rankings: {full} {rich} {high} {full of} {abundant} {abounding} {packed with}
-Sentence 115 rankings: {rich} {wealthy}
-Sentence 116 rankings: {rich} {wealthy}
-Sentence 117 rankings: {full} {rich} {lavish} {vibrant} {elaborate}
-Sentence 118 rankings: {rich} {lush} {full} {ample} {detailed} {valuable} {significant}
-Sentence 119 rankings: {rich} {wealthy} {well-off}
-Sentence 120 rankings: {rich} {wealthy}
-Sentence 121 rankings: {harshly} {gravely} {severely} {seriously}
-Sentence 122 rankings: {badly} {gravely} {severely} {seriously}
-Sentence 123 rankings: {highly} {gravely} {severely} {seriously} {extremely} {critically}
-Sentence 124 rankings: {gravely} {harshly} {sternly} {severely} {seriously}
-Sentence 125 rankings: {badly} {gravely} {severely} {seriously} {critically}
-Sentence 126 rankings: {badly} {gravely} {severely} {seriously} {dramatically}
-Sentence 127 rankings: {badly} {gravely} {severely} {seriously} {devastatingly}
-Sentence 128 rankings: {badly} {heavily} {gravely} {severely} {seriously}
-Sentence 129 rankings: {gravely} {severely} {extremely} {dramatically}
-Sentence 130 rankings: {badly} {gravely} {heavily} {severely} {seriously} {extremely}
-Sentence 131 rankings: {wait} {watch} {stand} {look on} {do-nothing} {remain aloof} {remain inactive} {remain immobile}
-Sentence 132 rankings: {sit} {wait} {stand} {remain} {remain inactive}
-Sentence 133 rankings: {stay} {stand} {remain} {endure} {be resolute}
-Sentence 134 rankings: {stand} {remain} {prevail} {continue} {remain upright}
-Sentence 135 rankings: {stand} {symbolize} {represent} {abbreviate}
-Sentence 136 rankings: {wait} {stay} {rely} {stand} {remain}
-Sentence 137 rankings: {frame} {table} {stand} {place} {support} {platform} {location} {position} {placement}
-Sentence 138 rankings: {base} {stand} {table} {upright} {support}
-Sentence 139 rankings: {base} {stand} {support} {structure}
-Sentence 140 rankings: {stand} {stance} {position} {attitude}
-Sentence 141 rankings: {and} {with} {well} {along with} {in addition to}
-Sentence 142 rankings: {long} {much} {well} {sufficient} {in plenty of time}
-Sentence 143 rankings: {nice} {well} {properly} {satisfactorily}
-Sentence 144 rankings: {well} {including} {along with} {in addition to}
-Sentence 145 rankings: {well} {safely} {goodbye} {healthily} {good luck} {bon voyage} {excellently} {successfully} {in good health}
-Sentence 146 rankings: {well} {nice} {carefully} {efficiently} {excellently}
-Sentence 147 rankings: {well} {then} {indeed}
-Sentence 148 rankings: {and} {well} {including} {along with} {in addition to}
-Sentence 149 rankings: {so} {well}
-Sentence 150 rankings: {so} {well}
-Sentence 151 rankings: {wild} {animal} {untamed animal}
-Sentence 152 rankings: {wild} {feral} {animal} {untamed} {outside} {non-domestic} {undomesticated}
-Sentence 153 rankings: {wild} {free} {chaotic} {unrestrained}
-Sentence 154 rankings: {wild} {untamed} {non-captive} {undomesticated}
-Sentence 155 rankings: {wild} {crazy} {amazing} {dramatic} {incredible} {unbelievable}
-Sentence 156 rankings: {wild} {huge} {chaotic} {extreme} {irregular} {unrestrained} {unpredictable}
-Sentence 157 rankings: {wild} {crazy} {garish} {extreme} {striking} {coloured} {patterned} {unrestrained}
-Sentence 158 rankings: {wild} {crazy} {natural} {chaotic} {reckless} {unrestrained} {undisciplined}
-Sentence 159 rankings: {wild} {untamed} {non-captive} {undomesticated}
-Sentence 160 rankings: {wild} {wilderness} {uninhabited land} {out of captivity} {uncultivated land} {its natural environment}
-Sentence 161 rankings: {can} {bin} {disposal} {container}
-Sentence 162 rankings: {can} {tin} {receptacle}
-Sentence 163 rankings: {tin} {can}
-Sentence 164 rankings: {can} {canister} {container}
-Sentence 165 rankings: {can} {tin} {container}
-Sentence 166 rankings: {bin} {can} {container}
-Sentence 167 rankings: {can} {tin} {container}
-Sentence 168 rankings: {bin} {can} {container}
-Sentence 169 rankings: {can} {tin}
-Sentence 170 rankings: {tin} {can}
-Sentence 171 rankings: {dark} {night} {gloom} {shade} {shadow} {darkness} {lack of light}
-Sentence 172 rankings: {dark} {night} {oblivion} {ignorance} {uninformed}
-Sentence 173 rankings: {dark} {unsure} {unclear} {unaware} {ignorant} {uncertain} {oblivious} {uninformed} {unilluminated}
-Sentence 174 rankings: {dark} {shade} {shadow} {secret} {darkness} {away from light}
-Sentence 175 rankings: {dark} {night} {darkness} {obscure situation} {somewhere unilluminated}
-Sentence 176 rankings: {dark} {unaware} {ignorant} {oblivious} {uninformed} {unilluminated}
-Sentence 177 rankings: {dark} {gloom} {black} {shadow} {dimness}
-Sentence 178 rankings: {dusk} {dark} {sunset} {at night} {nightfall}
-Sentence 179 rankings: {dark} {night} {shadow} {sombre} {mystery} {darkness}
-Sentence 180 rankings: {dark} {darkness} {absence of light}
-Sentence 181 rankings: {scrutiny} {inspection} {examination} {investigation}
-Sentence 182 rankings: {inspection} {assessment} {examination} {consultation} {investigation}
-Sentence 183 rankings: {enquiry} {analysis} {scrutiny} {examination} {investigation}
-Sentence 184 rankings: {study} {scrutiny} {analysis} {inspection} {examination} {investigation}
-Sentence 185 rankings: {study} {scrutiny} {inspection} {examination} {investigation}
-Sentence 186 rankings: {analysis} {inspection} {assessment} {examination} {investigation}
-Sentence 187 rankings: {scrutiny} {analysis} {inspection} {examination}
-Sentence 188 rankings: {exam} {test} {assessment} {examination}
-Sentence 189 rankings: {test} {exam} {assessment} {examination}
-Sentence 190 rankings: {test} {inspection} {examination} {investigation}
-Sentence 191 rankings: {fear} {dread} {be afraid of} {be scared of} {be alarmed by} {be frightened of} {be frightened by}
-Sentence 192 rankings: {fear} {expect} {suspect} {afraid of} {anticipate}
-Sentence 193 rankings: {fear} {dread} {worry} {be afraid} {be frightened}
-Sentence 194 rankings: {fear} {dread} {scare} {be afraid} {be frightened} {dread entering}
-Sentence 195 rankings: {fear} {worry} {suspect} {be afraid} {anticipate} {be anxious} {be alarmed}
-Sentence 196 rankings: {fear} {expect} {anticipate} {anxiously anticipated}
-Sentence 197 rankings: {fear} {dread} {afraid of} {worry about} {be afraid of} {be frightened of}
-Sentence 198 rankings: {fear} {worry} {suspect} {be afraid} {be worried} {be concerned} {be apprehensive}
-Sentence 199 rankings: {fear} {dread} {afraid of} {scared of} {frightened of}
-Sentence 200 rankings: {fear} {dread} {believe} {be sorry} {be afraid} {unfortunately}
-Sentence 201 rankings: {forget} {neglect} {overlook} {inadvertently omit}
-Sentence 202 rankings: {lose} {forget} {ignore} {overlook} {disregard} {cease to be remembered}
-Sentence 203 rankings: {fail} {omit} {forget} {neglect}
-Sentence 204 rankings: {forget} {let slip} {overlook} {cease to remember}
-Sentence 205 rankings: {fail} {omit} {forget} {overlook} {overlook running}
-Sentence 206 rankings: {forget} {overlook} {remember} {fail to remember} {cease to remember}
-Sentence 207 rankings: {lose} {forget} {overlook} {disregard} {put out of mind}
-Sentence 208 rankings: {forget} {overlook} {not remember}
-Sentence 209 rankings: {fail} {omit} {forget} {fail to remember}
-Sentence 210 rankings: {forget} {not recall} {not remember} {fail to remember} {omit to remember}
-Sentence 211 rankings: {pn} {gall} {secretion producing}
-Sentence 212 rankings: {pn} {gall}
-Sentence 213 rankings: {gall} {cheek} {nerve} {temerity} {audacity} {impudence} {effrontery}
-Sentence 214 rankings: {pn} {gall} {bile-producing}
-Sentence 215 rankings: {gall} {grub} {pustule} {abnormal growth}
-Sentence 216 rankings: {bile} {gall} {cheek} {rancor} {poison} {bitter spirit}
-Sentence 217 rankings: {gall} {cheek} {nerve} {audacity} {temerity} {effrontery}
-Sentence 218 rankings: {gall} {unknown person}
-Sentence 219 rankings: {gall} {blister} {abnormal growth}
-Sentence 220 rankings: {gall} {nerve} {cheek} {audacity} {temerity} {effrontery}
-Sentence 221 rankings: {dire} {grim} {bleak} {doomy} {severe} {horrific} {horrible} {negative} {doom laden}
-Sentence 222 rankings: {grim} {gruesome} {horrible} {terrible} {horrific} {unpleasant} {unrelenting}
-Sentence 223 rankings: {grim} {dire} {bleak} {morbid} {dismal} {terrible} {depressing} {unpleasant}
-Sentence 224 rankings: {grim} {harsh} {bleak} {gloomy} {horrid} {depressing}
-Sentence 225 rankings: {dire} {grim} {dark} {ghastly} {sinister} {horrible} {horrific} {unrelenting}
-Sentence 226 rankings: {grim} {harsh} {awful} {horrid} {dismal} {unpleasant} {depressing}
-Sentence 227 rankings: {grim} {awful} {harsh} {severe} {gloomy} {difficult} {harrowing} {unrelenting}
-Sentence 228 rankings: {grim} {stern} {harsh} {severe} {gloomy} {serious} {forbidding}
-Sentence 229 rankings: {grim} {dire} {dark} {bleak} {gloomy} {appalling} {depressing}
-Sentence 230 rankings: {grim} {dire} {dismal} {gloomy} {severe} {unpromising}
-Sentence 231 rankings: {lie} {fib} {say falsely} {say untruthfully}
-Sentence 232 rankings: {be} {lie} {wait} {remain} {untruths} {falsehoods}
-Sentence 233 rankings: {get} {lie} {rest} {recline} {stretch out} {recline horizontally}
-Sentence 234 rankings: {lie} {put} {place} {extend} {had direction}
-Sentence 235 rankings: {lie} {rest} {hide} {remain} {be bury} {be located} {can be found}
-Sentence 236 rankings: {lie} {stay} {recline} {stretch out} {recline horizontally}
-Sentence 237 rankings: {be} {lie} {rest} {recline} {reclined horizontally}
-Sentence 238 rankings: {lie} {sit} {place} {resting} {position} {that was}
-Sentence 239 rankings: {fib} {lie} {deceive} {falsify} {fibbing} {telling untruths} {telling falsehoods}
-Sentence 240 rankings: {lie} {lay} {leave} {arrange} {resting} {situate}
-Sentence 241 rankings: {nasty} {vicious} {spiteful} {horrible} {unpleasant}
-Sentence 242 rankings: {mean} {nasty} {spiteful} {malicious} {unpleasant} {disagreeable}
-Sentence 243 rankings: {nasty} {unpleasant} {disagreeable} {inhospitable}
-Sentence 244 rankings: {mean} {nasty} {malicious} {unpleasant} {unpalatable}
-Sentence 245 rankings: {nasty} {painful} {malicious} {vindictive} {unpleasant} {disagreeable}
-Sentence 246 rankings: {mean} {nasty} {vicious} {spiteful} {unpleasant}
-Sentence 247 rankings: {bad} {foul} {nasty} {bitter} {horrible} {unpleasant}
-Sentence 248 rankings: {mean} {dirty} {nasty} {vicious} {horrible} {dangerous} {formidable} {unpleasant}
-Sentence 249 rankings: {nasty} {annoying} {unpleasant} {objectionable}
-Sentence 250 rankings: {bad} {mean} {nasty} {offensive} {malicious} {unpleasant} {objectionable}
-Sentence 251 rankings: {nearly} {almost}
-Sentence 252 rankings: {nearly} {almost}
-Sentence 253 rankings: {nearly} {almost} {practically}
-Sentence 254 rankings: {almost} {nearly} {approximately}
-Sentence 255 rankings: {almost} {nearly} {practically} {approximately}
-Sentence 256 rankings: {anyway} {nearly} {almost} {remotely} {anywhere near} {even approximately}
-Sentence 257 rankings: {nearly} {almost}
-Sentence 258 rankings: {nearly} {almost}
-Sentence 259 rankings: {half} {quite} {anyway} {nearly} {almost} {anything like} {even approximately}
-Sentence 260 rankings: {nearly} {almost} {approximately}
-Sentence 261 rankings: {outdoor} {outside} {open-air} {outward-bound}
-Sentence 262 rankings: {outside} {outdoor} {open-air} {outward-bound}
-Sentence 263 rankings: {outdoor} {outside} {external}
-Sentence 264 rankings: {outside} {outdoor} {open-air} {external} {uncovered}
-Sentence 265 rankings: {outside} {outdoor} {open-air} {external} {uncovered}
-Sentence 266 rankings: {outside} {outdoor} {open-air}
-Sentence 267 rankings: {outdoor} {outside} {open-air} {external} {all-weather}
-Sentence 268 rankings: {outdoor} {outside} {roadside} {open-air} {external}
-Sentence 269 rankings: {outside} {outdoor} {open-air}
-Sentence 270 rankings: {outside} {outdoor} {alfresco} {open-air}
-Sentence 271 rankings: {fair} {good} {sensible} {reliable} {good value} {reasonable}
-Sentence 272 rankings: {rational} {sensible} {measured} {reliable} {reasonable} {well-judged}
-Sentence 273 rankings: {fair} {moderate} {acceptable} {affordable} {reasonable} {inexpensive}
-Sentence 274 rankings: {fair} {rational} {sensible} {equitable} {reasonable}
-Sentence 275 rankings: {fair} {moderate} {manageable} {reasonable} {acceptable} {appropriate} {justifiable}
-Sentence 276 rankings: {fair} {just} {sensible} {tolerable} {acceptable} {reasonable} {appropriate}
-Sentence 277 rankings: {credible} {adequate} {reliable} {acceptable} {sufficient} {reasonable} {justifiable}
-Sentence 278 rankings: {fair} {enough} {adequate} {sufficient} {reasonable}
-Sentence 279 rankings: {good} {fair} {likely} {reasonable} {acceptable} {sufficient} {high enough}
-Sentence 280 rankings: {fair} {sensible} {moderate} {reasonable} {acceptable} {inexpensive}
-Sentence 281 rankings: {broad} {vague} {rough} {general} {preliminary} {approximate}
-Sentence 282 rankings: {wild} {rough} {uncut} {coarse} {uneven}
-Sentence 283 rankings: {rough} {uneven} {coarse} {jagged} {unfinished}
-Sentence 284 rankings: {rough} {inexact} {approximate} {rudimentary}
-Sentence 285 rankings: {rough} {inexact} {rudimentary} {approximate}
-Sentence 286 rankings: {rough} {simple} {inexact} {approximate}
-Sentence 287 rankings: {hard} {harsh} {tough} {rough} {hard time} {difficult} {demanding}
-Sentence 288 rankings: {basic} {rough} {crude} {irregular} {not smooth} {unfinished} {rudimentary}
-Sentence 289 rankings: {poor} {rough} {uncivil} {violent} {raucous} {dangerous} {unrefined} {disorderly}
-Sentence 290 rankings: {tough} {rough} {imperfect} {difficult} {unpleasant} {rudimentary}
-Sentence 291 rankings: {run} {govern} {manage} {control} {organise}
-Sentence 292 rankings: {run} {sprint} {operate} {working} {training} {functioning}
-Sentence 293 rankings: {run} {last} {fill} {total} {cover} {extend} {stretch} {continue for}
-Sentence 294 rankings: {run} {appear} {be published} {be serialised} {appear in sequence}
-Sentence 295 rankings: {run} {chair} {manage} {control} {organise}
-Sentence 296 rankings: {go} {run} {work} {operate} {function}
-Sentence 297 rankings: {run} {manage} {handle} {organise} {complete}
-Sentence 298 rankings: {go} {run} {flow} {proceed} {go against} {contradict}
-Sentence 299 rankings: {use} {run} {execute} {operate} {include}
-Sentence 300 rankings: {run} {rush} {flee} {avoid} {scurry} {try to escape}
+Sentence 1 rankings: {clever} {intelligent} {smart} {bright}
+Sentence 2 rankings: {clever} {intelligent} {smart} {bright}
+Sentence 3 rankings: {clear} {light} {bright} {luminous} {well-lit}
+Sentence 4 rankings: {clear} {light} {bright} {luminous} {well-lit}
+Sentence 5 rankings: {colourful} {luminous} {bright} {brilliant} {gleam}
+Sentence 6 rankings: {colourful} {luminous} {bright} {brilliant} {gleam}
+Sentence 7 rankings: {intelligent} {clever} {bright}
+Sentence 8 rankings: {intelligent} {clever} {bright}
+Sentence 9 rankings: {capable} {sharp} {intelligent} {motivated} {bright} {clever} {promising} {most able}
+Sentence 10 rankings: {capable} {sharp} {intelligent} {motivated} {bright} {clever} {promising} {most able}
+Sentence 11 rankings: {skilled} {talented} {bright} {up-and-coming} {gifted} {promising} {most talented}
+Sentence 12 rankings: {skilled} {talented} {bright} {up-and-coming} {gifted} {promising} {most talented}
+Sentence 13 rankings: {positive} {good} {bright} {optimistic} {promising} {hopeful}
+Sentence 14 rankings: {positive} {good} {bright} {optimistic} {promising} {hopeful}
+Sentence 15 rankings: {deep} {bright} {shining} {luminous} {vivid} {vibrant}
+Sentence 16 rankings: {deep} {bright} {shining} {luminous} {vivid} {vibrant}
+Sentence 17 rankings: {shining} {bright} {alight}
+Sentence 18 rankings: {shining} {bright} {alight}
+Sentence 19 rankings: {great} {clever} {brilliant} {smart} {intelligent} {bright}
+Sentence 20 rankings: {great} {clever} {brilliant} {smart} {intelligent} {bright}
+Sentence 21 rankings: {production} {film} {movie} {picture}
+Sentence 22 rankings: {production} {film} {movie} {picture}
+Sentence 23 rankings: {picture} {film} {movie}
+Sentence 24 rankings: {picture} {film} {movie}
+Sentence 25 rankings: {picture} {film} {movie}
+Sentence 26 rankings: {picture} {film} {movie}
+Sentence 27 rankings: {picture} {film} {movie}
+Sentence 28 rankings: {picture} {film} {movie}
+Sentence 29 rankings: {picture} {film} {movie}
+Sentence 30 rankings: {picture} {film} {movie}
+Sentence 31 rankings: {film} {movie} {picture}
+Sentence 32 rankings: {film} {movie} {picture}
+Sentence 33 rankings: {picture} {film} {movie}
+Sentence 34 rankings: {picture} {film} {movie}
+Sentence 35 rankings: {picture} {film} {movie} {documentary}
+Sentence 36 rankings: {picture} {film} {movie} {documentary}
+Sentence 37 rankings: {picture} {film} {movie}
+Sentence 38 rankings: {picture} {film} {movie}
+Sentence 39 rankings: {film} {production} {picture} {movie}
+Sentence 40 rankings: {film} {production} {picture} {movie}
+Sentence 41 rankings: {happen} {occur} {take}
+Sentence 42 rankings: {happen} {occur} {take}
+Sentence 43 rankings: {risk} {take} {experiment in their roles}
+Sentence 44 rankings: {risk} {take} {experiment in their roles}
+Sentence 45 rankings: {last} {be} {take} {engage for}
+Sentence 46 rankings: {last} {be} {take} {engage for}
+Sentence 47 rankings: {last} {take} {occupy}
+Sentence 48 rankings: {last} {take} {occupy}
+Sentence 49 rankings: {consider} {accept} {take} {include} {think about}
+Sentence 50 rankings: {consider} {accept} {take} {include} {think about}
+Sentence 51 rankings: {risk} {take} {undergo} {run} {tolerate} {accept}
+Sentence 52 rankings: {risk} {take} {undergo} {run} {tolerate} {accept}
+Sentence 53 rankings: {take} {grasp} {get} {gather} {collect} {pick up}
+Sentence 54 rankings: {take} {grasp} {get} {gather} {collect} {pick up}
+Sentence 55 rankings: {grow} {take} {establish itself}
+Sentence 56 rankings: {grow} {take} {establish itself}
+Sentence 57 rankings: {take} {happen} {occur}
+Sentence 58 rankings: {take} {happen} {occur}
+Sentence 59 rankings: {take} {start} {assume} {begin}
+Sentence 60 rankings: {take} {start} {assume} {begin}
+Sentence 61 rankings: {tight} {uncomfortable} {small} {close-fitting} {constricted} {constricting} {too small}
+Sentence 62 rankings: {tight} {uncomfortable} {small} {constricting} {close-fitting} {constricted} {too small}
+Sentence 63 rankings: {low} {tight} {constricted} {high-strung} {pressurised}
+Sentence 64 rankings: {low} {tight} {constricted} {pressurised} {high-strung}
+Sentence 65 rankings: {sparse} {scarce} {tight} {constricted} {not easily available}
+Sentence 66 rankings: {sparse} {scarce} {tight} {not easily available} {constricted}
+Sentence 67 rankings: {tight} {close} {scarce} {constricted} {not easily available}
+Sentence 68 rankings: {tight} {close} {scarce} {not easily available} {constricted}
+Sentence 69 rankings: {tight} {cramped} {restricted} {close-fitting} {constricted} {too small}
+Sentence 70 rankings: {tight} {cramped} {restricted} {close-fitting} {constricted} {too small}
+Sentence 71 rankings: {tight} {close} {firmly} {closely}
+Sentence 72 rankings: {tight} {close} {firmly} {closely}
+Sentence 73 rankings: {uncomfortable} {tight} {compressed} {stretched} {constricted}
+Sentence 74 rankings: {uncomfortable} {tight} {compressed} {stretched} {constricted}
+Sentence 75 rankings: {firmly} {tight} {secure} {securely}
+Sentence 76 rankings: {firmly} {tight} {secure} {securely}
+Sentence 77 rankings: {tight} {close} {near} {close by} {close to} {on top of}
+Sentence 78 rankings: {tight} {close} {near} {close to} {on top of} {close by}
+Sentence 79 rankings: {restricted} {close} {low} {tight} {pressured} {constricted}
+Sentence 80 rankings: {restricted} {close} {low} {tight} {pressured} {constricted}
+Sentence 81 rankings: {level} {pole} {marker} {barrier} {bar} {obstruction} {hurdle}
+Sentence 82 rankings: {level} {pole} {marker} {barrier} {bar} {obstruction} {hurdle}
+Sentence 83 rankings: {bar} {handlebar}
+Sentence 84 rankings: {bar} {handlebar}
+Sentence 85 rankings: {bar} {saloon} {pub} {drinking house} {hostelry}
+Sentence 86 rankings: {bar} {saloon} {pub} {drinking house} {hostelry}
+Sentence 87 rankings: {ban} {prohibition} {restriction} {exclusion} {bar}
+Sentence 88 rankings: {ban} {prohibition} {restriction} {exclusion} {bar}
+Sentence 89 rankings: {block} {bar} {slab} {snack} {biscuit}
+Sentence 90 rankings: {block} {bar} {slab} {snack} {biscuit}
+Sentence 91 rankings: {menu} {banner} {indicator} {bar}
+Sentence 92 rankings: {menu} {banner} {indicator} {bar}
+Sentence 93 rankings: {pole} {rod} {bar} {crossbar} {apparatus} {metal}
+Sentence 94 rankings: {pole} {rod} {bar} {crossbar} {apparatus} {metal}
+Sentence 95 rankings: {bar} {saloon} {pub}
+Sentence 96 rankings: {bar} {saloon} {pub}
+Sentence 97 rankings: {lounge} {bar} {pub} {drinking lounge}
+Sentence 98 rankings: {lounge} {bar} {pub} {drinking lounge}
+Sentence 99 rankings: {block} {exclude} {obstruct} {prevent} {bar}
+Sentence 100 rankings: {block} {exclude} {obstruct} {prevent} {bar}
+Sentence 101 rankings: {crucifix} {cross}
+Sentence 102 rankings: {crucifix} {cross}
+Sentence 103 rankings: {cross} {crucifix} {two intersecting lines} {x shape}
+Sentence 104 rankings: {cross} {crucifix} {x shape} {two intersecting lines}
+Sentence 105 rankings: {cross} {crucifix} {x} {two intersecting lines}
+Sentence 106 rankings: {cross} {crucifix} {x} {two intersecting lines}
+Sentence 107 rankings: {hybrid} {cross} {hybrid of} {mixture of}
+Sentence 108 rankings: {hybrid} {cross} {hybrid of} {mixture of}
+Sentence 109 rankings: {crucifix} {cross}
+Sentence 110 rankings: {crucifix} {cross}
+Sentence 111 rankings: {crucifix} {cross}
+Sentence 112 rankings: {crucifix} {cross}
+Sentence 113 rankings: {crucifix} {cross}
+Sentence 114 rankings: {crucifix} {cross}
+Sentence 115 rankings: {sequence} {cross} {segment} {transverse} {right angled cut}
+Sentence 116 rankings: {sequence} {cross} {segment} {transverse} {right angled cut}
+Sentence 117 rankings: {sample} {mixture} {cross} {representative sample} {typical sample}
+Sentence 118 rankings: {sample} {mixture} {cross} {typical sample} {representative sample}
+Sentence 119 rankings: {cross} {angry} {annoyed} {irritated} {irate}
+Sentence 120 rankings: {cross} {angry} {annoyed} {irritated} {irate}
+Sentence 121 rankings: {finally} {eventually} {ultimately} {at last}
+Sentence 122 rankings: {finally} {eventually} {ultimately} {at last}
+Sentence 123 rankings: {finally} {in conclusion} {lastly}
+Sentence 124 rankings: {finally} {in conclusion} {lastly}
+Sentence 125 rankings: {finally} {eventually} {at last} {at long last}
+Sentence 126 rankings: {finally} {eventually} {at long last} {at last}
+Sentence 127 rankings: {finally} {lastly} {eventually} {in conclusion} {to conclude}
+Sentence 128 rankings: {finally} {lastly} {eventually} {to conclude} {in conclusion}
+Sentence 129 rankings: {also} {finally} {lastly}
+Sentence 130 rankings: {also} {finally} {lastly}
+Sentence 131 rankings: {lastly} {at last} {eventually} {finally}
+Sentence 132 rankings: {lastly} {at last} {eventually} {finally}
+Sentence 133 rankings: {eventually} {finally} {at last}
+Sentence 134 rankings: {eventually} {finally} {at last}
+Sentence 135 rankings: {lastly} {eventually} {finally} {at last}
+Sentence 136 rankings: {lastly} {eventually} {finally} {at last}
+Sentence 137 rankings: {lastly} {finally} {in conclusion} {last of all}
+Sentence 138 rankings: {lastly} {finally} {last of all} {in conclusion}
+Sentence 139 rankings: {finally} {lastly}
+Sentence 140 rankings: {finally} {lastly}
+Sentence 141 rankings: {detect} {exist} {evident} {present} {find} {discover}
+Sentence 142 rankings: {detect} {exist} {evident} {present} {find} {discover}
+Sentence 143 rankings: {feel} {find} {discover} {realise}
+Sentence 144 rankings: {feel} {find} {discover} {realise}
+Sentence 145 rankings: {think} {find} {believe} {discover} {felt}
+Sentence 146 rankings: {think} {find} {believe} {discover} {felt}
+Sentence 147 rankings: {discover} {find} {seek} {locate} {look for}
+Sentence 148 rankings: {discover} {find} {seek} {locate} {look for}
+Sentence 149 rankings: {show} {see} {find} {believe} {discover} {recognised as}
+Sentence 150 rankings: {show} {see} {find} {believe} {discover} {recognised as}
+Sentence 151 rankings: {locate} {get} {find} {buy} {discover}
+Sentence 152 rankings: {locate} {get} {find} {buy} {discover}
+Sentence 153 rankings: {locate} {write} {find} {get} {obtain} {discover} {invent} {look for}
+Sentence 154 rankings: {locate} {write} {find} {get} {obtain} {discover} {invent} {look for}
+Sentence 155 rankings: {consider} {feel} {think} {find} {believe} {perceive as} {realise is} {see as}
+Sentence 156 rankings: {consider} {feel} {think} {find} {believe} {realise is} {see as} {perceive as}
+Sentence 157 rankings: {calculate} {determine} {locate} {find} {discover} {ascertain}
+Sentence 158 rankings: {calculate} {determine} {locate} {find} {discover} {ascertain}
+Sentence 159 rankings: {find} {discover}
+Sentence 160 rankings: {find} {discover}
+Sentence 161 rankings: {cure} {fix} {heal}
+Sentence 162 rankings: {cure} {fix} {heal}
+Sentence 163 rankings: {correct} {fix} {repair} {compensate for} {make up for} {sort out} {mend}
+Sentence 164 rankings: {correct} {fix} {repair} {sort out} {make up for} {compensate for} {mend}
+Sentence 165 rankings: {fix} {resolve} {solve} {repair} {mend}
+Sentence 166 rankings: {fix} {resolve} {solve} {repair} {mend}
+Sentence 167 rankings: {cure} {fix} {heal} {mend}
+Sentence 168 rankings: {cure} {fix} {heal} {mend}
+Sentence 169 rankings: {correct} {fix} {resolve} {patch} {repair} {cure}
+Sentence 170 rankings: {correct} {fix} {resolve} {patch} {repair} {cure}
+Sentence 171 rankings: {correct} {fix} {repair} {put right} {sort out} {mend}
+Sentence 172 rankings: {correct} {fix} {repair} {put right} {sort out} {mend}
+Sentence 173 rankings: {fix} {repair} {mend}
+Sentence 174 rankings: {fix} {repair} {mend}
+Sentence 175 rankings: {correct} {resolve} {fix} {solve} {mend}
+Sentence 176 rankings: {correct} {resolve} {fix} {solve} {mend}
+Sentence 177 rankings: {correct} {fix} {resolve} {improve} {solve} {do} {mend}
+Sentence 178 rankings: {correct} {fix} {resolve} {improve} {solve} {do} {mend}
+Sentence 179 rankings: {intent} {fix} {stick} {determine} {set}
+Sentence 180 rankings: {intent} {fix} {stick} {determine} {set}
+Sentence 181 rankings: {manage} {succeed} {be able} {endeavour}
+Sentence 182 rankings: {manage} {succeed} {be able} {endeavour}
+Sentence 183 rankings: {oversee} {direct} {control} {organise} {manage} {handle}
+Sentence 184 rankings: {oversee} {direct} {control} {organise} {manage} {handle}
+Sentence 185 rankings: {direct} {control} {manage} {organise} {handle} {look after} {take care of}
+Sentence 186 rankings: {direct} {control} {manage} {organise} {handle} {take care of} {look after}
+Sentence 187 rankings: {control} {govern} {manage} {organise}
+Sentence 188 rankings: {control} {govern} {manage} {organise}
+Sentence 189 rankings: {direct} {manage} {coordinate} {control} {organise} {conduct} {deal with}
+Sentence 190 rankings: {direct} {manage} {coordinate} {control} {organise} {conduct} {deal with}
+Sentence 191 rankings: {coordinate} {handle} {manage} {control} {organise} {take care of}
+Sentence 192 rankings: {coordinate} {handle} {manage} {control} {organise} {take care of}
+Sentence 193 rankings: {manage} {undertake} {success} {be able} {succeed in}
+Sentence 194 rankings: {manage} {undertake} {success} {be able} {succeed in}
+Sentence 195 rankings: {coordinate} {control} {manage} {administer}
+Sentence 196 rankings: {coordinate} {control} {manage} {administer}
+Sentence 197 rankings: {success} {manage} {be able} {contrive} {succeed in}
+Sentence 198 rankings: {success} {manage} {contrive} {be able} {succeed in}
+Sentence 199 rankings: {direct} {control} {coordinate} {run} {conduct} {manage} {administer}
+Sentence 200 rankings: {direct} {control} {coordinate} {run} {conduct} {manage} {administer}
+Sentence 201 rankings: {good} {orderly} {clever} {neat} {well-formulated}
+Sentence 202 rankings: {good} {orderly} {clever} {neat} {well-formulated}
+Sentence 203 rankings: {clever} {smart} {neat}
+Sentence 204 rankings: {clever} {smart} {neat}
+Sentence 205 rankings: {simple} {neat} {tidy}
+Sentence 206 rankings: {simple} {neat} {tidy}
+Sentence 207 rankings: {orderly} {tidy} {order} {neat}
+Sentence 208 rankings: {orderly} {tidy} {order} {neat}
+Sentence 209 rankings: {simple} {trim} {compact} {orderly} {tidy} {neat}
+Sentence 210 rankings: {simple} {trim} {compact} {orderly} {tidy} {neat}
+Sentence 211 rankings: {great} {pleasing} {neat} {cool}
+Sentence 212 rankings: {great} {pleasing} {neat} {cool}
+Sentence 213 rankings: {great} {orderly} {nice} {cool} {tidy} {neat}
+Sentence 214 rankings: {great} {orderly} {nice} {cool} {tidy} {neat}
+Sentence 215 rankings: {clever} {neat} {cool} {great}
+Sentence 216 rankings: {clever} {neat} {cool} {great}
+Sentence 217 rankings: {uniform} {tidy} {orderly} {neat} {ordered}
+Sentence 218 rankings: {uniform} {tidy} {orderly} {neat} {ordered}
+Sentence 219 rankings: {great} {cool} {terrific} {neat}
+Sentence 220 rankings: {great} {cool} {terrific} {neat}
+Sentence 221 rankings: {detail} {significant} {rewarding} {full} {rich}
+Sentence 222 rankings: {detail} {significant} {rewarding} {full} {rich}
+Sentence 223 rankings: {rich} {wealthy}
+Sentence 224 rankings: {rich} {wealthy}
+Sentence 225 rankings: {rich} {wealthy}
+Sentence 226 rankings: {rich} {wealthy}
+Sentence 227 rankings: {abundant} {high} {rich} {full} {abounding} {full of} {packed with}
+Sentence 228 rankings: {abundant} {high} {rich} {full} {full of} {abounding} {packed with}
+Sentence 229 rankings: {rich} {wealthy}
+Sentence 230 rankings: {rich} {wealthy}
+Sentence 231 rankings: {rich} {wealthy}
+Sentence 232 rankings: {rich} {wealthy}
+Sentence 233 rankings: {elaborate} {full} {vibrant} {lavish} {rich}
+Sentence 234 rankings: {elaborate} {full} {vibrant} {lavish} {rich}
+Sentence 235 rankings: {detailed} {ample} {valuable} {significant} {full} {lush} {rich}
+Sentence 236 rankings: {detailed} {ample} {valuable} {significant} {full} {lush} {rich}
+Sentence 237 rankings: {rich} {wealthy} {well-off}
+Sentence 238 rankings: {rich} {wealthy} {well-off}
+Sentence 239 rankings: {rich} {wealthy}
+Sentence 240 rankings: {rich} {wealthy}
+Sentence 241 rankings: {severely} {seriously} {gravely} {harshly}
+Sentence 242 rankings: {severely} {seriously} {gravely} {harshly}
+Sentence 243 rankings: {severely} {seriously} {badly} {gravely}
+Sentence 244 rankings: {severely} {seriously} {badly} {gravely}
+Sentence 245 rankings: {extremely} {highly} {severely} {seriously} {gravely} {critically}
+Sentence 246 rankings: {extremely} {highly} {severely} {seriously} {gravely} {critically}
+Sentence 247 rankings: {seriously} {severely} {gravely} {harshly} {sternly}
+Sentence 248 rankings: {seriously} {severely} {gravely} {harshly} {sternly}
+Sentence 249 rankings: {severely} {badly} {seriously} {gravely} {critically}
+Sentence 250 rankings: {severely} {badly} {seriously} {gravely} {critically}
+Sentence 251 rankings: {dramatically} {seriously} {severely} {badly} {gravely}
+Sentence 252 rankings: {dramatically} {seriously} {severely} {badly} {gravely}
+Sentence 253 rankings: {severely} {badly} {seriously} {gravely} {devastatingly}
+Sentence 254 rankings: {severely} {badly} {seriously} {gravely} {devastatingly}
+Sentence 255 rankings: {seriously} {badly} {gravely} {severely} {heavily}
+Sentence 256 rankings: {seriously} {badly} {gravely} {severely} {heavily}
+Sentence 257 rankings: {extremely} {dramatically} {severely} {gravely}
+Sentence 258 rankings: {extremely} {dramatically} {severely} {gravely}
+Sentence 259 rankings: {seriously} {severely} {heavily} {badly} {extremely} {gravely}
+Sentence 260 rankings: {seriously} {severely} {heavily} {badly} {extremely} {gravely}
+Sentence 261 rankings: {stand} {wait} {watch} {do-nothing} {look on} {remain aloof} {remain immobile} {remain inactive}
+Sentence 262 rankings: {stand} {wait} {watch} {remain inactive} {remain aloof} {look on} {remain immobile} {do-nothing}
+Sentence 263 rankings: {wait} {sit} {remain} {stand} {remain inactive}
+Sentence 264 rankings: {wait} {sit} {remain} {stand} {remain inactive}
+Sentence 265 rankings: {stand} {endure} {remain} {stay} {be resolute}
+Sentence 266 rankings: {stand} {endure} {remain} {stay} {be resolute}
+Sentence 267 rankings: {stand} {remain} {continue} {prevail} {remain upright}
+Sentence 268 rankings: {stand} {remain} {continue} {prevail} {remain upright}
+Sentence 269 rankings: {abbreviate} {stand} {represent} {symbolize}
+Sentence 270 rankings: {abbreviate} {stand} {represent} {symbolize}
+Sentence 271 rankings: {remain} {rely} {wait} {stay} {stand}
+Sentence 272 rankings: {remain} {rely} {wait} {stay} {stand}
+Sentence 273 rankings: {table} {frame} {placement} {platform} {location} {stand} {place} {position} {support}
+Sentence 274 rankings: {table} {frame} {placement} {platform} {location} {stand} {place} {position} {support}
+Sentence 275 rankings: {support} {table} {base} {stand} {upright}
+Sentence 276 rankings: {support} {table} {base} {stand} {upright}
+Sentence 277 rankings: {structure} {base} {stand} {support}
+Sentence 278 rankings: {structure} {base} {stand} {support}
+Sentence 279 rankings: {stance} {attitude} {position} {stand}
+Sentence 280 rankings: {stance} {attitude} {position} {stand}
+Sentence 281 rankings: {and} {with} {well} {along with} {in addition to}
+Sentence 282 rankings: {and} {with} {well} {along with} {in addition to}
+Sentence 283 rankings: {sufficient} {much} {long} {well} {in plenty of time}
+Sentence 284 rankings: {sufficient} {much} {long} {well} {in plenty of time}
+Sentence 285 rankings: {properly} {nice} {well} {satisfactorily}
+Sentence 286 rankings: {properly} {nice} {well} {satisfactorily}
+Sentence 287 rankings: {well} {including} {along with} {in addition to}
+Sentence 288 rankings: {well} {including} {in addition to} {along with}
+Sentence 289 rankings: {safely} {goodbye} {well} {successfully} {bon voyage} {excellently} {good luck} {healthily} {in good health}
+Sentence 290 rankings: {safely} {goodbye} {well} {successfully} {bon voyage} {excellently} {healthily} {good luck} {in good health}
+Sentence 291 rankings: {efficiently} {carefully} {nice} {well} {excellently}
+Sentence 292 rankings: {efficiently} {carefully} {nice} {well} {excellently}
+Sentence 293 rankings: {indeed} {then} {well}
+Sentence 294 rankings: {indeed} {then} {well}
+Sentence 295 rankings: {and} {well} {including} {along with} {in addition to}
+Sentence 296 rankings: {and} {well} {including} {in addition to} {along with}
+Sentence 297 rankings: {so} {well}
+Sentence 298 rankings: {so} {well}
+Sentence 299 rankings: {so} {well}
+Sentence 300 rankings: {so} {well}
+Sentence 301 rankings: {animal} {wild} {untamed animal}
+Sentence 302 rankings: {animal} {wild} {untamed animal}
+Sentence 303 rankings: {animal} {wild} {feral} {outside} {non-domestic} {undomesticated} {untamed}
+Sentence 304 rankings: {animal} {wild} {feral} {outside} {untamed} {non-domestic} {undomesticated}
+Sentence 305 rankings: {free} {wild} {chaotic} {unrestrained}
+Sentence 306 rankings: {free} {wild} {chaotic} {unrestrained}
+Sentence 307 rankings: {wild} {non-captive} {undomesticated} {untamed}
+Sentence 308 rankings: {wild} {non-captive} {undomesticated} {untamed}
+Sentence 309 rankings: {crazy} {unbelievable} {dramatic} {incredible} {amazing} {wild}
+Sentence 310 rankings: {crazy} {unbelievable} {dramatic} {incredible} {amazing} {wild}
+Sentence 311 rankings: {irregular} {extreme} {chaotic} {unpredictable} {huge} {wild} {unrestrained}
+Sentence 312 rankings: {irregular} {extreme} {chaotic} {unpredictable} {huge} {wild} {unrestrained}
+Sentence 313 rankings: {striking} {extreme} {coloured} {crazy} {wild} {patterned} {garish} {unrestrained}
+Sentence 314 rankings: {striking} {extreme} {coloured} {crazy} {wild} {patterned} {garish} {unrestrained}
+Sentence 315 rankings: {reckless} {chaotic} {crazy} {natural} {wild} {undisciplined} {unrestrained}
+Sentence 316 rankings: {reckless} {chaotic} {crazy} {natural} {wild} {unrestrained} {undisciplined}
+Sentence 317 rankings: {wild} {non-captive} {undomesticated} {untamed}
+Sentence 318 rankings: {wild} {untamed} {undomesticated} {non-captive}
+Sentence 319 rankings: {wild} {wilderness} {its natural environment} {out of captivity} {uncultivated land} {uninhabited land}
+Sentence 320 rankings: {wild} {wilderness} {uninhabited land} {uncultivated land} {out of captivity} {its natural environment}
+Sentence 321 rankings: {container} {disposal} {can} {bin}
+Sentence 322 rankings: {container} {disposal} {can} {bin}
+Sentence 323 rankings: {tin} {can} {receptacle}
+Sentence 324 rankings: {tin} {can} {receptacle}
+Sentence 325 rankings: {tin} {can}
+Sentence 326 rankings: {tin} {can}
+Sentence 327 rankings: {container} {can} {canister}
+Sentence 328 rankings: {container} {can} {canister}
+Sentence 329 rankings: {container} {tin} {can}
+Sentence 330 rankings: {container} {tin} {can}
+Sentence 331 rankings: {container} {can} {bin}
+Sentence 332 rankings: {container} {can} {bin}
+Sentence 333 rankings: {tin} {container} {can}
+Sentence 334 rankings: {tin} {container} {can}
+Sentence 335 rankings: {container} {can} {bin}
+Sentence 336 rankings: {container} {can} {bin}
+Sentence 337 rankings: {tin} {can}
+Sentence 338 rankings: {tin} {can}
+Sentence 339 rankings: {tin} {can}
+Sentence 340 rankings: {tin} {can}
+Sentence 341 rankings: {darkness} {dark} {shade} {night} {shadow} {gloom} {lack of light}
+Sentence 342 rankings: {darkness} {dark} {shade} {night} {shadow} {gloom} {lack of light}
+Sentence 343 rankings: {ignorance} {night} {dark} {oblivion} {uninformed}
+Sentence 344 rankings: {ignorance} {night} {dark} {uninformed} {oblivion}
+Sentence 345 rankings: {uncertain} {ignorant} {unsure} {unclear} {unaware} {dark} {oblivious} {unilluminated} {uninformed}
+Sentence 346 rankings: {uncertain} {ignorant} {unsure} {unclear} {unaware} {dark} {oblivious} {unilluminated} {uninformed}
+Sentence 347 rankings: {secret} {darkness} {dark} {shade} {shadow} {away from light}
+Sentence 348 rankings: {secret} {darkness} {dark} {shade} {shadow} {away from light}
+Sentence 349 rankings: {darkness} {dark} {night} {obscure situation} {somewhere unilluminated}
+Sentence 350 rankings: {darkness} {dark} {night} {somewhere unilluminated} {obscure situation}
+Sentence 351 rankings: {dark} {unaware} {ignorant} {oblivious} {unilluminated} {uninformed}
+Sentence 352 rankings: {dark} {unaware} {ignorant} {oblivious} {unilluminated} {uninformed}
+Sentence 353 rankings: {dark} {shadow} {black} {dimness} {gloom}
+Sentence 354 rankings: {dark} {shadow} {black} {dimness} {gloom}
+Sentence 355 rankings: {dark} {dusk} {nightfall} {sunset} {at night}
+Sentence 356 rankings: {dark} {dusk} {nightfall} {sunset} {at night}
+Sentence 357 rankings: {darkness} {shadow} {dark} {mystery} {night} {sombre}
+Sentence 358 rankings: {darkness} {shadow} {dark} {mystery} {night} {sombre}
+Sentence 359 rankings: {darkness} {dark} {absence of light}
+Sentence 360 rankings: {darkness} {dark} {absence of light}
+Sentence 361 rankings: {scrutiny} {inspection} {examination} {investigation}
+Sentence 362 rankings: {scrutiny} {inspection} {examination} {investigation}
+Sentence 363 rankings: {investigation} {assessment} {inspection} {consultation} {examination}
+Sentence 364 rankings: {investigation} {assessment} {inspection} {consultation} {examination}
+Sentence 365 rankings: {scrutiny} {analysis} {examination} {investigation} {enquiry}
+Sentence 366 rankings: {scrutiny} {analysis} {examination} {investigation} {enquiry}
+Sentence 367 rankings: {inspection} {scrutiny} {examination} {investigation} {analysis} {study}
+Sentence 368 rankings: {inspection} {scrutiny} {examination} {investigation} {analysis} {study}
+Sentence 369 rankings: {scrutiny} {examination} {investigation} {inspection} {study}
+Sentence 370 rankings: {scrutiny} {examination} {investigation} {inspection} {study}
+Sentence 371 rankings: {assessment} {analysis} {inspection} {examination} {investigation}
+Sentence 372 rankings: {assessment} {analysis} {inspection} {examination} {investigation}
+Sentence 373 rankings: {analysis} {inspection} {examination} {scrutiny}
+Sentence 374 rankings: {analysis} {inspection} {examination} {scrutiny}
+Sentence 375 rankings: {assessment} {examination} {exam} {test}
+Sentence 376 rankings: {assessment} {examination} {exam} {test}
+Sentence 377 rankings: {exam} {examination} {assessment} {test}
+Sentence 378 rankings: {exam} {examination} {assessment} {test}
+Sentence 379 rankings: {test} {examination} {inspection} {investigation}
+Sentence 380 rankings: {test} {examination} {inspection} {investigation}
+Sentence 381 rankings: {fear} {dread} {be afraid of} {be alarmed by} {be frightened by} {be frightened of} {be scared of}
+Sentence 382 rankings: {fear} {dread} {be afraid of} {be scared of} {be alarmed by} {be frightened of} {be frightened by}
+Sentence 383 rankings: {fear} {suspect} {expect} {anticipate} {afraid of}
+Sentence 384 rankings: {fear} {suspect} {expect} {anticipate} {afraid of}
+Sentence 385 rankings: {fear} {worry} {dread} {be afraid} {be frightened}
+Sentence 386 rankings: {fear} {worry} {dread} {be afraid} {be frightened}
+Sentence 387 rankings: {fear} {scare} {dread} {be afraid} {be frightened} {dread entering}
+Sentence 388 rankings: {fear} {scare} {dread} {be frightened} {dread entering} {be afraid}
+Sentence 389 rankings: {fear} {worry} {anticipate} {suspect} {be afraid} {be alarmed} {be anxious}
+Sentence 390 rankings: {fear} {worry} {anticipate} {suspect} {be afraid} {be anxious} {be alarmed}
+Sentence 391 rankings: {fear} {anticipate} {expect} {anxiously anticipated}
+Sentence 392 rankings: {fear} {anticipate} {expect} {anxiously anticipated}
+Sentence 393 rankings: {fear} {dread} {afraid of} {be afraid of} {be frightened of} {worry about}
+Sentence 394 rankings: {fear} {dread} {be frightened of} {afraid of} {worry about} {be afraid of}
+Sentence 395 rankings: {fear} {worry} {suspect} {be afraid} {be apprehensive} {be concerned} {be worried}
+Sentence 396 rankings: {fear} {worry} {suspect} {be apprehensive} {be afraid} {be concerned} {be worried}
+Sentence 397 rankings: {fear} {dread} {afraid of} {frightened of} {scared of}
+Sentence 398 rankings: {fear} {dread} {afraid of} {frightened of} {scared of}
+Sentence 399 rankings: {fear} {believe} {dread} {unfortunately} {be afraid} {be sorry}
+Sentence 400 rankings: {fear} {believe} {dread} {unfortunately} {be afraid} {be sorry}
+Sentence 401 rankings: {neglect} {forget} {inadvertently omit} {overlook}
+Sentence 402 rankings: {neglect} {forget} {overlook} {inadvertently omit}
+Sentence 403 rankings: {disregard} {forget} {lose} {ignore} {cease to be remembered} {overlook}
+Sentence 404 rankings: {disregard} {forget} {lose} {ignore} {cease to be remembered} {overlook}
+Sentence 405 rankings: {fail} {omit} {neglect} {forget}
+Sentence 406 rankings: {fail} {omit} {neglect} {forget}
+Sentence 407 rankings: {forget} {cease to remember} {let slip} {overlook}
+Sentence 408 rankings: {forget} {let slip} {cease to remember} {overlook}
+Sentence 409 rankings: {omit} {fail} {forget} {overlook} {overlook running}
+Sentence 410 rankings: {omit} {fail} {forget} {overlook running} {overlook}
+Sentence 411 rankings: {remember} {forget} {cease to remember} {fail to remember} {overlook}
+Sentence 412 rankings: {remember} {forget} {overlook} {cease to remember} {fail to remember}
+Sentence 413 rankings: {disregard} {forget} {lose} {overlook} {put out of mind}
+Sentence 414 rankings: {disregard} {forget} {lose} {put out of mind} {overlook}
+Sentence 415 rankings: {forget} {not remember} {overlook}
+Sentence 416 rankings: {forget} {not remember} {overlook}
+Sentence 417 rankings: {fail} {omit} {forget} {fail to remember}
+Sentence 418 rankings: {fail} {omit} {forget} {fail to remember}
+Sentence 419 rankings: {forget} {fail to remember} {not recall} {not remember} {omit to remember}
+Sentence 420 rankings: {forget} {not recall} {not remember} {fail to remember} {omit to remember}
+Sentence 421 rankings: {gall} {pn} {secretion producing}
+Sentence 422 rankings: {gall} {pn} {secretion producing}
+Sentence 423 rankings: {gall} {pn}
+Sentence 424 rankings: {gall} {pn}
+Sentence 425 rankings: {cheek} {gall} {nerve} {audacity} {effrontery} {impudence} {temerity}
+Sentence 426 rankings: {cheek} {gall} {nerve} {temerity} {audacity} {effrontery} {impudence}
+Sentence 427 rankings: {gall} {bile-producing} {pn}
+Sentence 428 rankings: {gall} {bile-producing} {pn}
+Sentence 429 rankings: {gall} {grub} {abnormal growth} {pustule}
+Sentence 430 rankings: {gall} {grub} {abnormal growth} {pustule}
+Sentence 431 rankings: {poison} {bile} {cheek} {gall} {bitter spirit} {rancor}
+Sentence 432 rankings: {poison} {bile} {cheek} {gall} {bitter spirit} {rancor}
+Sentence 433 rankings: {nerve} {cheek} {gall} {audacity} {effrontery} {temerity}
+Sentence 434 rankings: {nerve} {cheek} {gall} {audacity} {effrontery} {temerity}
+Sentence 435 rankings: {gall} {unknown person}
+Sentence 436 rankings: {gall} {unknown person}
+Sentence 437 rankings: {gall} {blister} {abnormal growth}
+Sentence 438 rankings: {gall} {blister} {abnormal growth}
+Sentence 439 rankings: {nerve} {cheek} {gall} {audacity} {effrontery} {temerity}
+Sentence 440 rankings: {nerve} {cheek} {gall} {audacity} {effrontery} {temerity}
+Sentence 441 rankings: {negative} {severe} {horrible} {grim} {horrific} {dire} {bleak} {doom laden} {doomy}
+Sentence 442 rankings: {negative} {severe} {horrible} {grim} {horrific} {dire} {bleak} {doom laden} {doomy}
+Sentence 443 rankings: {terrible} {horrible} {unpleasant} {horrific} {grim} {gruesome} {unrelenting}
+Sentence 444 rankings: {terrible} {horrible} {unpleasant} {horrific} {grim} {gruesome} {unrelenting}
+Sentence 445 rankings: {unpleasant} {terrible} {morbid} {dire} {grim} {depressing} {bleak} {dismal}
+Sentence 446 rankings: {unpleasant} {terrible} {morbid} {dire} {grim} {depressing} {bleak} {dismal}
+Sentence 447 rankings: {bleak} {grim} {depressing} {harsh} {gloomy} {horrid}
+Sentence 448 rankings: {bleak} {grim} {depressing} {harsh} {gloomy} {horrid}
+Sentence 449 rankings: {sinister} {horrific} {dire} {grim} {horrible} {ghastly} {dark} {unrelenting}
+Sentence 450 rankings: {sinister} {horrific} {dire} {grim} {horrible} {ghastly} {dark} {unrelenting}
+Sentence 451 rankings: {awful} {unpleasant} {harsh} {grim} {depressing} {dismal} {horrid}
+Sentence 452 rankings: {awful} {unpleasant} {harsh} {grim} {depressing} {horrid} {dismal}
+Sentence 453 rankings: {difficult} {awful} {severe} {harsh} {grim} {harrowing} {gloomy} {unrelenting}
+Sentence 454 rankings: {difficult} {awful} {severe} {harsh} {grim} {harrowing} {unrelenting} {gloomy}
+Sentence 455 rankings: {harsh} {serious} {severe} {stern} {grim} {forbidding} {gloomy}
+Sentence 456 rankings: {harsh} {serious} {severe} {stern} {grim} {forbidding} {gloomy}
+Sentence 457 rankings: {bleak} {grim} {dire} {depressing} {dark} {appalling} {gloomy}
+Sentence 458 rankings: {bleak} {grim} {dire} {depressing} {dark} {gloomy} {appalling}
+Sentence 459 rankings: {severe} {dire} {grim} {dismal} {gloomy} {unpromising}
+Sentence 460 rankings: {severe} {dire} {grim} {dismal} {gloomy} {unpromising}
+Sentence 461 rankings: {lie} {fib} {say falsely} {say untruthfully}
+Sentence 462 rankings: {lie} {say falsely} {fib} {say untruthfully}
+Sentence 463 rankings: {remain} {lie} {wait} {be} {falsehoods} {untruths}
+Sentence 464 rankings: {remain} {lie} {wait} {be} {falsehoods} {untruths}
+Sentence 465 rankings: {lie} {rest} {get} {recline} {recline horizontally} {stretch out}
+Sentence 466 rankings: {lie} {rest} {get} {recline} {recline horizontally} {stretch out}
+Sentence 467 rankings: {lie} {place} {extend} {put} {had direction}
+Sentence 468 rankings: {lie} {place} {extend} {put} {had direction}
+Sentence 469 rankings: {hide} {lie} {remain} {rest} {be bury} {be located} {can be found}
+Sentence 470 rankings: {hide} {lie} {remain} {rest} {can be found} {be located} {be bury}
+Sentence 471 rankings: {lie} {stay} {recline} {recline horizontally} {stretch out}
+Sentence 472 rankings: {lie} {stay} {recline} {stretch out} {recline horizontally}
+Sentence 473 rankings: {rest} {lie} {be} {recline} {reclined horizontally}
+Sentence 474 rankings: {rest} {lie} {be} {recline} {reclined horizontally}
+Sentence 475 rankings: {position} {sit} {resting} {place} {lie} {that was}
+Sentence 476 rankings: {position} {sit} {resting} {place} {lie} {that was}
+Sentence 477 rankings: {lie} {deceive} {falsify} {fib} {fibbing} {telling falsehoods} {telling untruths}
+Sentence 478 rankings: {lie} {deceive} {telling untruths} {fib} {falsify} {telling falsehoods} {fibbing}
+Sentence 479 rankings: {resting} {lie} {lay} {leave} {arrange} {situate}
+Sentence 480 rankings: {resting} {lie} {lay} {leave} {arrange} {situate}
+Sentence 481 rankings: {nasty} {unpleasant} {vicious} {horrible} {spiteful}
+Sentence 482 rankings: {nasty} {unpleasant} {vicious} {horrible} {spiteful}
+Sentence 483 rankings: {nasty} {mean} {unpleasant} {malicious} {disagreeable} {spiteful}
+Sentence 484 rankings: {nasty} {mean} {unpleasant} {malicious} {disagreeable} {spiteful}
+Sentence 485 rankings: {unpleasant} {nasty} {inhospitable} {disagreeable}
+Sentence 486 rankings: {unpleasant} {nasty} {inhospitable} {disagreeable}
+Sentence 487 rankings: {mean} {malicious} {nasty} {unpleasant} {unpalatable}
+Sentence 488 rankings: {mean} {malicious} {nasty} {unpleasant} {unpalatable}
+Sentence 489 rankings: {malicious} {nasty} {disagreeable} {unpleasant} {painful} {vindictive}
+Sentence 490 rankings: {malicious} {nasty} {disagreeable} {unpleasant} {painful} {vindictive}
+Sentence 491 rankings: {vicious} {nasty} {unpleasant} {mean} {spiteful}
+Sentence 492 rankings: {vicious} {nasty} {unpleasant} {mean} {spiteful}
+Sentence 493 rankings: {bitter} {nasty} {unpleasant} {foul} {bad} {horrible}
+Sentence 494 rankings: {bitter} {nasty} {unpleasant} {foul} {bad} {horrible}
+Sentence 495 rankings: {dirty} {unpleasant} {dangerous} {vicious} {nasty} {formidable} {horrible} {mean}
+Sentence 496 rankings: {dirty} {unpleasant} {dangerous} {vicious} {nasty} {formidable} {horrible} {mean}
+Sentence 497 rankings: {annoying} {unpleasant} {nasty} {objectionable}
+Sentence 498 rankings: {annoying} {unpleasant} {nasty} {objectionable}
+Sentence 499 rankings: {malicious} {offensive} {mean} {bad} {unpleasant} {nasty} {objectionable}
+Sentence 500 rankings: {malicious} {offensive} {mean} {bad} {unpleasant} {nasty} {objectionable}
+Sentence 501 rankings: {almost} {nearly}
+Sentence 502 rankings: {almost} {nearly}
+Sentence 503 rankings: {almost} {nearly}
+Sentence 504 rankings: {almost} {nearly}
+Sentence 505 rankings: {practically} {nearly} {almost}
+Sentence 506 rankings: {practically} {nearly} {almost}
+Sentence 507 rankings: {approximately} {nearly} {almost}
+Sentence 508 rankings: {approximately} {nearly} {almost}
+Sentence 509 rankings: {approximately} {nearly} {almost} {practically}
+Sentence 510 rankings: {approximately} {nearly} {almost} {practically}
+Sentence 511 rankings: {almost} {nearly} {remotely} {anyway} {anywhere near} {even approximately}
+Sentence 512 rankings: {almost} {nearly} {remotely} {anyway} {even approximately} {anywhere near}
+Sentence 513 rankings: {almost} {nearly}
+Sentence 514 rankings: {almost} {nearly}
+Sentence 515 rankings: {nearly} {almost}
+Sentence 516 rankings: {nearly} {almost}
+Sentence 517 rankings: {almost} {quite} {nearly} {half} {anyway} {anything like} {even approximately}
+Sentence 518 rankings: {almost} {quite} {nearly} {half} {anyway} {even approximately} {anything like}
+Sentence 519 rankings: {nearly} {almost} {approximately}
+Sentence 520 rankings: {nearly} {almost} {approximately}
+Sentence 521 rankings: {outdoor} {outside} {open-air} {outward-bound}
+Sentence 522 rankings: {outdoor} {outside} {open-air} {outward-bound}
+Sentence 523 rankings: {outdoor} {open-air} {outside} {outward-bound}
+Sentence 524 rankings: {outdoor} {open-air} {outside} {outward-bound}
+Sentence 525 rankings: {external} {outdoor} {outside}
+Sentence 526 rankings: {external} {outdoor} {outside}
+Sentence 527 rankings: {external} {outdoor} {open-air} {outside} {uncovered}
+Sentence 528 rankings: {external} {outdoor} {open-air} {outside} {uncovered}
+Sentence 529 rankings: {outside} {external} {outdoor} {uncovered} {open-air}
+Sentence 530 rankings: {outside} {external} {outdoor} {uncovered} {open-air}
+Sentence 531 rankings: {outside} {outdoor} {open-air}
+Sentence 532 rankings: {outside} {outdoor} {open-air}
+Sentence 533 rankings: {external} {outside} {outdoor} {all-weather} {open-air}
+Sentence 534 rankings: {external} {outside} {outdoor} {all-weather} {open-air}
+Sentence 535 rankings: {external} {outdoor} {roadside} {outside} {open-air}
+Sentence 536 rankings: {external} {outdoor} {roadside} {outside} {open-air}
+Sentence 537 rankings: {outside} {outdoor} {open-air}
+Sentence 538 rankings: {outside} {outdoor} {open-air}
+Sentence 539 rankings: {outside} {outdoor} {open-air} {alfresco}
+Sentence 540 rankings: {outside} {outdoor} {open-air} {alfresco}
+Sentence 541 rankings: {reasonable} {reliable} {fair} {good} {sensible} {good value}
+Sentence 542 rankings: {reasonable} {reliable} {fair} {good} {sensible} {good value}
+Sentence 543 rankings: {reliable} {reasonable} {rational} {measured} {sensible} {well-judged}
+Sentence 544 rankings: {reliable} {reasonable} {rational} {measured} {sensible} {well-judged}
+Sentence 545 rankings: {affordable} {fair} {reasonable} {acceptable} {moderate} {inexpensive}
+Sentence 546 rankings: {affordable} {fair} {reasonable} {acceptable} {moderate} {inexpensive}
+Sentence 547 rankings: {reasonable} {fair} {sensible} {rational} {equitable}
+Sentence 548 rankings: {reasonable} {fair} {sensible} {rational} {equitable}
+Sentence 549 rankings: {appropriate} {reasonable} {fair} {justifiable} {acceptable} {manageable} {moderate}
+Sentence 550 rankings: {appropriate} {reasonable} {fair} {justifiable} {acceptable} {manageable} {moderate}
+Sentence 551 rankings: {appropriate} {reasonable} {acceptable} {fair} {just} {sensible} {tolerable}
+Sentence 552 rankings: {appropriate} {reasonable} {acceptable} {fair} {just} {sensible} {tolerable}
+Sentence 553 rankings: {adequate} {reliable} {sufficient} {reasonable} {acceptable} {justifiable} {credible}
+Sentence 554 rankings: {adequate} {reliable} {sufficient} {reasonable} {acceptable} {justifiable} {credible}
+Sentence 555 rankings: {sufficient} {reasonable} {fair} {adequate} {enough}
+Sentence 556 rankings: {sufficient} {reasonable} {fair} {adequate} {enough}
+Sentence 557 rankings: {sufficient} {reasonable} {acceptable} {fair} {likely} {good} {high enough}
+Sentence 558 rankings: {sufficient} {reasonable} {acceptable} {fair} {likely} {good} {high enough}
+Sentence 559 rankings: {acceptable} {reasonable} {fair} {sensible} {moderate} {inexpensive}
+Sentence 560 rankings: {acceptable} {reasonable} {fair} {sensible} {moderate} {inexpensive}
+Sentence 561 rankings: {general} {broad} {rough} {vague} {approximate} {preliminary}
+Sentence 562 rankings: {general} {broad} {rough} {vague} {approximate} {preliminary}
+Sentence 563 rankings: {rough} {uneven} {coarse} {wild} {uncut}
+Sentence 564 rankings: {rough} {uneven} {coarse} {wild} {uncut}
+Sentence 565 rankings: {rough} {coarse} {jagged} {uneven} {unfinished}
+Sentence 566 rankings: {rough} {coarse} {jagged} {uneven} {unfinished}
+Sentence 567 rankings: {approximate} {rough} {rudimentary} {inexact}
+Sentence 568 rankings: {approximate} {rough} {rudimentary} {inexact}
+Sentence 569 rankings: {approximate} {rough} {rudimentary} {inexact}
+Sentence 570 rankings: {approximate} {rough} {rudimentary} {inexact}
+Sentence 571 rankings: {simple} {rough} {approximate} {inexact}
+Sentence 572 rankings: {simple} {rough} {approximate} {inexact}
+Sentence 573 rankings: {rough} {hard} {tough} {difficult} {harsh} {demanding} {hard time}
+Sentence 574 rankings: {rough} {hard} {tough} {difficult} {harsh} {demanding} {hard time}
+Sentence 575 rankings: {rough} {crude} {basic} {irregular} {rudimentary} {unfinished} {not smooth}
+Sentence 576 rankings: {rough} {crude} {basic} {irregular} {rudimentary} {unfinished} {not smooth}
+Sentence 577 rankings: {poor} {rough} {dangerous} {violent} {disorderly} {raucous} {uncivil} {unrefined}
+Sentence 578 rankings: {poor} {rough} {dangerous} {violent} {disorderly} {uncivil} {unrefined} {raucous}
+Sentence 579 rankings: {tough} {rough} {difficult} {rudimentary} {imperfect} {unpleasant}
+Sentence 580 rankings: {tough} {rough} {difficult} {rudimentary} {imperfect} {unpleasant}
+Sentence 581 rankings: {control} {organise} {run} {manage} {govern}
+Sentence 582 rankings: {control} {organise} {run} {manage} {govern}
+Sentence 583 rankings: {training} {working} {functioning} {run} {sprint} {operate}
+Sentence 584 rankings: {training} {working} {functioning} {run} {sprint} {operate}
+Sentence 585 rankings: {total} {run} {fill} {stretch} {cover} {extend} {last} {continue for}
+Sentence 586 rankings: {total} {run} {fill} {stretch} {cover} {extend} {last} {continue for}
+Sentence 587 rankings: {appear} {run} {appear in sequence} {be published} {be serialised}
+Sentence 588 rankings: {appear} {run} {be published} {appear in sequence} {be serialised}
+Sentence 589 rankings: {run} {manage} {control} {organise} {chair}
+Sentence 590 rankings: {run} {manage} {control} {organise} {chair}
+Sentence 591 rankings: {function} {operate} {run} {go} {work}
+Sentence 592 rankings: {function} {operate} {run} {go} {work}
+Sentence 593 rankings: {complete} {run} {handle} {organise} {manage}
+Sentence 594 rankings: {complete} {run} {handle} {organise} {manage}
+Sentence 595 rankings: {proceed} {run} {flow} {go} {contradict} {go against}
+Sentence 596 rankings: {proceed} {run} {flow} {go} {contradict} {go against}
+Sentence 597 rankings: {operate} {use} {run} {execute} {include}
+Sentence 598 rankings: {operate} {use} {run} {execute} {include}
+Sentence 599 rankings: {rush} {avoid} {run} {flee} {scurry} {try to escape}
+Sentence 600 rankings: {rush} {avoid} {run} {flee} {scurry} {try to escape}
