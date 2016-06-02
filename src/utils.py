@@ -102,12 +102,3 @@ def lemmatizate_freqs_file(inp_file, out_file):
     for word in sorted(nfreqs.keys()):
         f.write('{} {}\n'.format(word, nfreqs[word]))
     
-
-def word2vec_similarity(model, a, b):
-    if a not in model.vocab:
-        return 0
-    if b not in model.vocab:
-        return 0
-    va = model.get_vector(a)
-    vb = model.get_vector(b)
-    return np.dot(va, vb)
