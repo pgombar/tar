@@ -48,10 +48,7 @@ class ScorerContextSimilarity(Scorer):
         return ret
 
     
-simple_wiki_freqs = utils.read_freqs_file(simple_wiki_freqs_file)
-
-scorer = ScorerContextSimilarity()
-rankings = scorer.rankMultiple(tasks)
-
+scorer = ScorerSWFreqs()
+rankings = utils.rank_everything(scorer, tasks)
 utils.output(output_file, rankings)
 

@@ -1,10 +1,13 @@
 #!/usr/bin/python
 
 import nltk
+
 from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
+
 import xml.etree.ElementTree as ET
 import numpy as np
+
 
 def parse_text(text):
     """ 
@@ -62,8 +65,7 @@ def parse_input_file(input_dir):
     subs = map(lambda x: x.split(';')[:-1], subs)
     
     return zip(ret, subs)
-
-
+    
 def output(filepath, rankings):
     """ Writes rankings to file """
     
@@ -102,3 +104,6 @@ def lemmatizate_freqs_file(inp_file, out_file):
     for word in sorted(nfreqs.keys()):
         f.write('{} {}\n'.format(word, nfreqs[word]))
     
+
+def rank_everything(scorer, tasks):
+    return map(lambda ((a, b), c): scorer.rank((a, b), c), tasks)
