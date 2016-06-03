@@ -54,7 +54,7 @@ def parse_input_file(input_dir):
                 pre = parse_text(text[0])
                 sub = [' '.join(parse_text(text[1]))]
                 ret.append((pre + sub, len(pre)))
-
+            
     subs = open(input_dir + 'substitutions').read()
     subs = subs.split('\n')
     if subs[-1] == '':

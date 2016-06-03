@@ -47,8 +47,17 @@ class ScorerContextSimilarity(Scorer):
                 ret += np.dot(self.vector(w), self.vector(sub))
         return ret
 
-    
-scorer = ScorerSWFreqs()
+class ScorerComb(Scorer):
+    s1 = 0
+    s2 = 0
+    def __init__(self):
+        self.s1 = ScorerSWFreqs()
+        self.s2 = ScorerContextSimilarity()
+
+    def score(self, (sentence, idx), sub):
+        return self.s1.score((sentence, idx), sub) * self.s2.score((sentence, idx), sub)
+
+scorer = ScorerComb()
 rankings = utils.rank_everything(scorer, tasks)
 utils.output(output_file, rankings)
 
