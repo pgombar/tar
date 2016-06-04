@@ -1,17 +1,20 @@
 #!/usr/bin/python
 
 import utils
-import word2vec
+import gensim
 import numpy as np
 from scorer import Scorer
+
+Word2Vec = gensim.models.Word2Vec
 
 input_dir = '../data/trial-dataset/'
 output_file = 'main_ranking'
 simple_wiki_freqs_file = '../simple_wiki/freqs.txt'
 wiki_freqs_file = '../wiki/freqs.txt'
+model_file = '../models/glove.6B.200d.txt'
+
 
 tasks = utils.parse_input_file(input_dir)
-
 
 class ScorerInvLength(Scorer):
     def score(self, _, sub):
@@ -53,35 +56,18 @@ class ScorerSWFreqs(Scorer):
 class ScorerContextSimilarity(Scorer):
     model = 0
     def __init__(self):
-        self.model = word2vec.load('../simple_wiki/dump.bin')
+        self.model = Word2Vec.load_word2vec_format(model_file, binary=False)
 
-    cache = {}
-    def vector(self, w):
-        if w not in self.cache:
-            if w in self.model.vocab:
-                self.cache[w] = self.model.get_vector(w)
-            else:
-                self.cache[w] = 100*[0.0]
-        return self.cache[w]
-
+    def similarity(self, a, b):
+        if a in self.model and b in self.model:
+            return self.model.similarity(a, b)
+        return 0
+    
     def score(self, (sentence, idx), sub):
         ret = 0
         for i, w in enumerate(sentence):
-#            if i != idx:
-#                ret += np.dot(self.vector(w), self.vector(sub))
-            ret += np.dot(self.vector(w), self.vector(sub))
+            ret += self.similarity(w, sub)
         return ret
-
-
-class ScorerBiran(Scorer):
-    s1 = 0
-    s2 = 0
-    def __init__(self):
-        self.s1 = ScorerCorpusComplexity()
-        self.s2 = ScorerInvLength()
-
-    def score(self, (sentence, idx), sub):
-        return self.s1.score((sentence, idx), sub) * self.s2.score((sentence, idx), sub)
 
 
 class ScorerComb(Scorer):

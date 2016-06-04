@@ -3,6 +3,9 @@ ScorerWFreqs - 0.321174177461
 ScorerSWFreqs - 0.345570433437
 
 ScorerCorpusComplexity - 0.271771759109
-ScorerBiran - 0.272991571908
-ScorerComb  - 0.355938842227
-ScorerContextSimilarity - 0.192483927186 (s originalnom rijeci 0.200412710378)
+
+ScorerContextSimilarity - 0.340081275842 (d=50)
+ScorerContextSimilarity - 0.356548748626 (d=100)
+ScorerContextSimilarity - 0.364477531819 (d=200)
+ScorerContextSimilarity - 0.358988374224 (d=300)
+
