@@ -70,21 +70,11 @@ class ScorerContextSimilarity(Scorer):
         return ret
 
 
-class ScorerComb(Scorer):
-    s1 = 0
-    s2 = 0
-    def __init__(self):
-        self.s1 = ScorerSWFreqs()
-        self.s2 = ScorerContextSimilarity()
-
-    def score(self, (sentence, idx), sub):
-        return self.s1.score((sentence, idx), sub) * self.s2.score((sentence, idx), sub)
-
 scorers = [
-    ScorerInvLength(),
-    ScorerSWFreqs(),
-    ScorerWFreqs(),
-    ScorerContextSimilarity(),
+   ScorerInvLength(),
+   ScorerSWFreqs(),
+#   ScorerWFreqs(),
+#   ScorerContextSimilarity(),
 ]
 
 def features((sentence, idx), sub):
@@ -94,8 +84,4 @@ gold_file = input_dir + 'substitutions.gold-rankings'
 gold_rankings = utils.parse_rankings_file(gold_file)
 
 utils.output_svm_file(svm_file, gold_rankings, tasks, features)
-
-# scorer = ScorerContextSimilarity()
-# rankings = utils.rank_everything(scorer, tasks)
-# utils.output(output_file, rankings)
 
