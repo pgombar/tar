@@ -12,7 +12,7 @@ output_file = 'main_ranking'
 simple_wiki_freqs_file = '../simple_wiki/freqs.txt'
 wiki_freqs_file = '../wiki/freqs.txt'
 model_file = '../models/glove.6B.200d.txt'
-
+svm_file = 'train.dat'
 
 tasks = utils.parse_input_file(input_dir)
 
@@ -80,8 +80,22 @@ class ScorerComb(Scorer):
     def score(self, (sentence, idx), sub):
         return self.s1.score((sentence, idx), sub) * self.s2.score((sentence, idx), sub)
 
+scorers = [
+    ScorerInvLength(),
+    ScorerSWFreqs(),
+    ScorerWFreqs(),
+    ScorerContextSimilarity(),
+]
 
-scorer = ScorerContextSimilarity()
-rankings = utils.rank_everything(scorer, tasks)
-utils.output(output_file, rankings)
+def features((sentence, idx), sub):
+    return map(lambda scorer: scorer.score((sentence, idx), sub), scorers)
+
+gold_file = input_dir + 'substitutions.gold-rankings'
+gold_rankings = utils.parse_rankings_file(gold_file)
+
+utils.output_svm_file(svm_file, gold_rankings, tasks, features)
+
+# scorer = ScorerContextSimilarity()
+# rankings = utils.rank_everything(scorer, tasks)
+# utils.output(output_file, rankings)
 

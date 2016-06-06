@@ -8,6 +8,8 @@ from nltk.corpus import stopwords
 import xml.etree.ElementTree as ET
 import numpy as np
 
+import re
+
 
 def parse_text(text):
     """ 
@@ -77,7 +79,7 @@ def output(filepath, rankings):
 
 
 def read_freqs_file(filepath, separator=' '):
-    """ Read word frequencies file and returns dictionary
+    """ Reads word frequencies file and returns dictionary
     where words are keys and frequencies are values.
     """
     f = open(filepath, 'r')
@@ -109,64 +111,52 @@ def rank_everything(scorer, tasks):
     return map(lambda ((a, b), c): scorer.rank((a, b), c), tasks)
     
 
-def get_svm_line(gold, qid, features):
+def get_svm_line(gold, qid, sub, features):
     """ Produce a string of the following SVM input format:
         3 qid:1 1:1 2:1 3:0 4:0.2 5:0 # 1A
     """
-    features = [1, 2, 3]
-    s = str(gold) + " qid:" + str(qid) + " "
-    for i,f in enumerate(features):
-        s += str(i+1) + ":" + str(f) + " "
-    s += "# " + str(qid) + "\n"
+    s = "{} qid:{}".format(gold, qid)
+    for idx, feature in enumerate(features):
+        s += " {}:{}".format(idx + 1, feature)
+    s += " # {}_{}\n".format(qid, sub)
     return s
 
 
-def get_sentence_data(gold_subs, subs):
-    """ Retrieve qid (sentence number) and the target value (gold for each sub).
-        Gold is a string in the format of:
-        "Sentence 1 rankings: {intelligent} {clever} {smart} {bright}",
-        subs is a list of possible substitutions.
-        Returns a list of (gold, qid) for each substitution.
-    """
-    ret = []
-    qid = gold_subs.split()[1]
-    gold_rank = map(lambda f: f.strip(), gold_subs.replace('}','').split('{')[1:])
-    for sub in subs:
-        # TODO skuziti kako parsirati {rijec, rijec2} jer ovdje nastaje problem
-        try:
-            gold = gold_rank.index(sub) + 1
-        except ValueError:
-            gold = -1
-        ret.append((gold, qid))
-    return ret
-
-
-def output_svm_file(filepath, gold_subs_file, subs_file, features):
-    """ Read gold rankings file and substitutions, parse them and
-        output a file in SVM format.
-        Features is a list of floats, filepath is the output file.
+def output_svm_file(filepath, gold_rankings, tasks, features_fun):
+    """ Output a file in SVM rank format.
+        features_fun is a function that takes (sentence, idx) and sub as 
+        arguments and returns list of floats (features).
     """
     f = open(filepath, 'w')
     
-    gold_subs_list = open(gold_subs_file).read()
-    gold_subs_list = gold_subs_list.split('\n')
-    if gold_subs_list[-1] == '':
-        gold_subs_list.pop()
+    assert len(tasks) == len(gold_rankings)
     
-    subs_list = open(subs_file).read()
-    subs_list = subs_list.split('\n')
-    if subs_list[-1] == '':
-        subs_list.pop()
-
-    assert len(subs_list) == len(gold_subs_list)
-    assert all([x[-1] == ';' for x in subs_list])
-    
-    subs_list = map(lambda x: x.split(';')[:-1], subs_list)
-    
-    for gold, sub in zip(gold_subs_list, subs_list):
-        sentence_data = get_sentence_data(gold, sub)
-        for gold, qid in sentence_data:
-            # TODO promijeniti u features[i]
-            f.write(get_svm_line(gold, qid, features))
+    for qid, (gold, task) in enumerate(zip(gold_rankings, tasks)):
+        (sentence, idx), subs = task
+        for sub in subs:
+            features = features_fun((sentence, idx), sub)
+            f.write(get_svm_line(gold[sub], qid, sub, features))
     f.close()
 
+    
+def parse_rankings_file(filename):
+    pattern = re.compile('.*?\{(.*?)\}(.*)')
+    
+    allContextRankings = []
+    for line in open(filename):
+	rest = line
+	currentContextRanking = {}
+	counter = 1
+	while rest:
+	    match = pattern.search(rest)
+	    currentRank = match.group(1)
+	    individualWords = currentRank.split(', ')
+	    for word in individualWords:
+		word = re.sub('\s$','',word)
+		currentContextRanking[word] = counter
+	    rest = match.group(2)
+	    counter += 1
+		
+	allContextRankings.append(currentContextRanking)
+    
+    return allContextRankings
