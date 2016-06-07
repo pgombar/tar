@@ -64,7 +64,7 @@ def parse_input_file(input_dir):
     assert len(subs) == len(ret)
 
     assert all([x[-1] == ';' for x in subs])
-    subs = map(lambda x: x.split(';')[:-1], subs)
+    subs = map(lambda x: map(lambda y: y.strip(), x.split(';'))[:-1], subs)
     
     return zip(ret, subs)
     
@@ -111,7 +111,7 @@ def rank_everything(scorer, tasks):
     return map(lambda ((a, b), c): scorer.rank((a, b), c), tasks)
     
 
-def get_svm_line(gold, qid, sub, features):
+def get_features_line(gold, qid, sub, features):
     """ Produce a string of the following SVM input format:
         3 qid:1 1:1 2:1 3:0 4:0.2 5:0 # 1A
     """
@@ -122,7 +122,7 @@ def get_svm_line(gold, qid, sub, features):
     return s
 
 
-def output_svm_file(filepath, gold_rankings, tasks, features_fun):
+def output_features_file(filepath, gold_rankings, tasks, features_fun):
     """ Output a file in SVM rank format.
         features_fun is a function that takes (sentence, idx) and sub as 
         arguments and returns list of floats (features).
@@ -135,7 +135,7 @@ def output_svm_file(filepath, gold_rankings, tasks, features_fun):
         (sentence, idx), subs = task
         for sub in subs:
             features = features_fun((sentence, idx), sub)
-            f.write(get_svm_line(gold[sub], qid, sub, features))
+            f.write(get_features_line(gold[sub], qid, sub, features))
     f.close()
 
     

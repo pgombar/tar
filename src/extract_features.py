@@ -1,5 +1,20 @@
 #!/usr/bin/python
 
+import argparse
+
+parser = argparse.ArgumentParser(
+    description='Features extractor.',
+    epilog='Example: ./extract_features.py ../data/trial-dataset/ train.dat')
+
+parser.add_argument('input_dir', help='Samples directory')
+parser.add_argument('output_file', help='Output file')
+
+args = parser.parse_args()
+input_dir = args.input_dir
+output_file = args.output_file
+
+
+
 import utils
 import gensim
 import numpy as np
@@ -8,12 +23,9 @@ from scorer import Scorer
 
 Word2Vec = gensim.models.Word2Vec
 
-input_dir = '../data/trial-dataset/'
-output_file = 'main_ranking'
 simple_wiki_freqs_file = '../simple_wiki/freqs.txt'
 wiki_freqs_file = '../wiki/freqs.txt'
-model_file = '../models/glove.6B.200d.txt'
-svm_file = 'train.dat'
+w2v_model_file = '../models/glove.6B.200d.txt'
 
 tasks = utils.parse_input_file(input_dir)
 
@@ -57,7 +69,7 @@ class ScorerSWFreqs(Scorer):
 class ScorerContextSimilarity(Scorer):
     model = 0
     def __init__(self):
-        self.model = Word2Vec.load_word2vec_format(model_file, binary=False)
+        self.model = Word2Vec.load_word2vec_format(w2v_model_file, binary=False)
 
     def similarity(self, a, b):
         if a in self.model and b in self.model:
@@ -89,6 +101,5 @@ def features((sentence, idx), sub):
 
 gold_file = input_dir + 'substitutions.gold-rankings'
 gold_rankings = utils.parse_rankings_file(gold_file)
-
-utils.output_svm_file(svm_file, gold_rankings, tasks, features)
+utils.output_features_file(output_file, gold_rankings, tasks, features)
 
