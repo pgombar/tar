@@ -3,6 +3,7 @@
 import utils
 import gensim
 import numpy as np
+from nltk.corpus import wordnet
 from scorer import Scorer
 
 Word2Vec = gensim.models.Word2Vec
@@ -70,10 +71,16 @@ class ScorerContextSimilarity(Scorer):
         return ret
 
 
+class ScorerWordNet(Scorer):
+    def score(self, _, sub):
+        return len(wordnet.synsets(sub))
+
+
 scorers = [
    ScorerInvLength(),
+   ScorerWordNet(),
    ScorerSWFreqs(),
-#   ScorerWFreqs(),
+   ScorerWFreqs(),
 #   ScorerContextSimilarity(),
 ]
 
