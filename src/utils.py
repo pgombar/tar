@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import nltk
+import itertools
 
 from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
@@ -160,3 +161,74 @@ def parse_rankings_file(filename):
 	allContextRankings.append(currentContextRanking)
     
     return allContextRankings
+
+
+
+def evaluate(rankings, gold):
+    system = []
+    for ranking in rankings:
+        current = {}
+        for i, sub in enumerate(ranking):
+            current[sub] = i + 1
+        system.append(current)
+        
+    totalPairCount = 0
+    agree = 0
+    equalAgree = 0
+	
+    contextCount = 0
+
+    #comparator function
+    def compare(val1, val2):
+	if (val1 < val2):
+	    return -1
+	elif (val1 > val2):
+	    return 1
+	else:
+	    return 0
+
+    for (sysContext, goldContext) in zip(system, gold):
+	contextCount += 1
+	#go through each combination of substitutions
+	for pair in itertools.permutations(sysContext.keys(), 2):
+	    totalPairCount += 1
+	    sysCompareVal = compare(sysContext[pair[0]],sysContext[pair[1]])
+	    goldCompareVal = compare(goldContext[pair[0]],goldContext[pair[1]])
+			
+	    #system and gold agree
+	    #add appropriate counts to agree count
+	    if (sysCompareVal) == (goldCompareVal):
+		agree += 1
+					
+	    if sysCompareVal == 0:
+		equalAgree += 1
+
+	    if goldCompareVal == 0:
+		equalAgree += 1
+						
+	
+    equalAgreeProb = float(equalAgree)/float(totalPairCount*2)
+	
+    #P(A) and P(E) values	
+    absoluteAgreement = float(agree)/float(totalPairCount)
+    chanceAgreement = (3*pow(equalAgreeProb,2)-2*equalAgreeProb+1.0)/2.0
+	
+    #return kappa score
+    return (absoluteAgreement - chanceAgreement)/(1.0 - chanceAgreement)
+
+
+def recover_rankings(tasks, preds):
+    rankings = []
+    cur = 0
+    for (sentence, idx), subs in tasks:
+        scores = []
+        for sub in subs:
+            scores.append((float(preds[cur]), sub))
+            cur += 1 
+
+        ranked = []
+        for _, sub in sorted(scores):
+            ranked.append(sub)
+        rankings.append(ranked)
+    assert cur == len(preds)
+    return rankings

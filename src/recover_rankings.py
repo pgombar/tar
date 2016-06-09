@@ -20,19 +20,6 @@ import utils
 tasks = utils.parse_input_file(input_dir)
 preds = open(predictions).read().split('\n')[:-1];
 
-rankings = []
-cur = 0
-for (sentence, idx), subs in tasks:
-    scores = []
-    for sub in subs:
-        scores.append((float(preds[cur]), sub))
-        cur += 1 
-
-    ranked = []
-    for _, sub in sorted(scores):
-        ranked.append(sub)
-    rankings.append(ranked)
-assert cur == len(preds)
-
+rankings = utils.recover_rankings(tasks, preds)
 utils.output(rankings_file, rankings)
 
