@@ -159,9 +159,9 @@ for deg in [1]:
         X_test = scaler.transform(X_test)
         X_test = PolynomialFeatures(degree=deg).fit_transform(X_test)
 
-        for logGamma in range(-10, 5):
+        for logGamma in range(-10, 1):
             gamma = 2**logGamma
-            for logC in range(-10, 5):
+            for logC in range(-10, 7):
                 C = 2**logC
                 Xp, yp = [], []
                 for i in range(X_train.shape[0]):
@@ -206,4 +206,4 @@ testX = PolynomialFeatures(degree=best_deg).fit_transform(testX)
 rankings = utils.recover_rankings(test_tasks, predict(best_model, best_gamma, testX))
 
 print 'test dataset: ', utils.evaluate(rankings, test_gold_rankings)
-utils.output('rankings', rankings)
+utils.output('trainer_rbf_rankings', rankings)

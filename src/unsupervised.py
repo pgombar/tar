@@ -1,8 +1,5 @@
 #!/usr/bin/python
 
-input_dir = '../data/trial-dataset/'
-output_file = 'rankings'
-
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
 import utils
@@ -17,8 +14,6 @@ Word2Vec = gensim.models.Word2Vec
 simple_wiki_freqs_file = '../simple_wiki/freqs.txt'
 wiki_freqs_file = '../wiki/freqs.txt'
 w2v_model_file = '../models/glove.6B.200d_reduced.txt'
-
-tasks = utils.parse_input_file(input_dir)
 
 class ScorerInvLength(Scorer):
     def score(self, _, sub):
@@ -109,17 +104,12 @@ class ScorerWordNet(Scorer):
         return len(wordnet.synsets(sub))
 
 
-gold_file = input_dir + 'substitutions.gold-rankings'
-gold_rankings = utils.parse_rankings_file(gold_file)
-
 scorers = [
     ScorerInvLength(),
     ScorerWordNet(),
     ScorerSWFreqs(),
-#    ScorerWFreqs(),
-#    ScorerFreqsRatio(),
+    ScorerFreqsRatio(),
     ScorerContextSimilarity(),
-#    ScorerSemanticSimilarity(),
 ]
 
 def get_features(tasks):
@@ -131,36 +121,7 @@ def get_features(tasks):
 
 print 'initialization done'
 
-coefs = np.zeros(len(scorers))
-features = get_features(tasks)
-transformer = MinMaxScaler().fit(features)
-features = transformer.transform(features)
-
-best = 0
-best_coefs = []
-
-K = 10
-
-def rec(i):
-    if i == len(scorers):
-        global features
-        rankings = utils.recover_rankings(tasks, -np.dot(features, coefs))
-        score = utils.evaluate(rankings, gold_rankings)
-        global best, best_coefs
-        if score > best:
-            print coefs, score
-            best = score
-            best_coefs = np.array(coefs, copy=True)
-        return
-
-    coefs[i] = 0
-    while coefs[i] <= K:
-        rec(i + 1)
-        coefs[i] += 1
-
-rec(0)
-print best
-print best_coefs
+coefs = [1,1,1,1,1]
     
 test_dir = '../data/test-data/'
 test_tasks = utils.parse_input_file(test_dir)
@@ -168,8 +129,9 @@ test_gold_file = test_dir + 'substitutions.gold-rankings'
 test_gold_rankings = utils.parse_rankings_file(test_gold_file)
 
 features = get_features(test_tasks)
+transformer = MinMaxScaler().fit(features)
 features = transformer.transform(features)
 
-rankings = utils.recover_rankings(test_tasks, -np.dot(features, best_coefs))
+rankings = utils.recover_rankings(test_tasks, -np.dot(features, coefs))
 print utils.evaluate(rankings, test_gold_rankings)
-utils.output('grid_search_rankings', rankings)
+utils.output('unsupervised_rankings', rankings)

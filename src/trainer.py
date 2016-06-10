@@ -109,8 +109,8 @@ scorers = [
     ScorerInvLength(),
     ScorerWordNet(),
     ScorerSWFreqs(),
-#    ScorerWFreqs(),
-#    ScorerCorpusComplexity(),
+    ScorerWFreqs(),
+    ScorerCorpusComplexity(),
     ScorerContextSimilarity(),
     ScorerSemanticSimilarity(),
 ]
@@ -148,10 +148,10 @@ scalers = {'standard': StandardScaler,
 for deg in (1,2):
     for scaler_name in scalers.keys():
         scaler = scalers[scaler_name]()
-        scaler = scaler.fit(X)
     
         X_train, y_train, blocks_train = get_features(tasks_train, gold_train)
         X_test, y_test, blocks_test = get_features(tasks_test, gold_test)
+        scaler = scaler.fit(X_train)
         X_train = scaler.transform(X_train)
         X_train = PolynomialFeatures(degree=deg).fit_transform(X_train)
         X_test = scaler.transform(X_test)
@@ -202,3 +202,4 @@ testX = PolynomialFeatures(degree=best_deg).fit_transform(testX)
 
 rankings = utils.recover_rankings(test_tasks, np.dot(testX, best_coef))
 print 'test dataset: ', utils.evaluate(rankings, test_gold_rankings)
+utils.output('trainer_rankings', rankings)
