@@ -11,7 +11,7 @@ scaler:  standard
 deg:  1
 C:  32
 gamma:  0.0009765625
-test dataset:  0.456017485993
+test dataset:  0.461002551111
 file: trainer_rbf_rankings
 
 
@@ -24,11 +24,12 @@ features:
     ScorerCorpusComplexity(),
     ScorerContextSimilarity(),
     ScorerSemanticSimilarity(),
-scaler:  standard
+scaler:  minmax
 deg:  1
-C:  4
-coef:  [ 0.         -0.25534068 -0.15819508 -0.01124598  0.00293657 -0.00292747
- -0.95038811 -0.07996395]
+C:  16
+coef:  [ 0.         -0.35534612 -0.10947902 -0.29620877  0.2734898  -0.04144536
+ -0.83514713  0.00432774]
+test dataset:  0.443097011095
 test dataset:  0.442690067004
 file: trainer_rankings
 prvi koeficijent je slobodan član
@@ -45,8 +46,8 @@ features:
     ScorerSemanticSimilarity(),
 
 scaler:MinMax
-coef: [1, 0, 2, 0, 0, 8, 0]
-test dataset: 0.45906956667
+coef: [1, 0, 10, 0, 0, 9, 0]
+test dataset: 0.459374774746
 file: grid_search_rankings
 
 ------unsupervised.py--------------
@@ -54,10 +55,10 @@ features:
     ScorerInvLength(),
     ScorerWordNet(),
     ScorerSWFreqs(),
-    ScorerFreqsRatio(),
+    ScorerCorpusComplexity(),
     ScorerContextSimilarity(),
 scaler: MinMaxScaler
 coef:[1,1,1,1,1] (ekvivalentno prosjeku znacajki)
-test_dataset:0.383479701724
+test_dataset:0.313790526094
 file: unsupervised_rankings
 
