@@ -1,0 +1,231 @@
+% Paper template for TAR 2016
+% (C) 2014 Jan Šnajder, Goran Glavaš, Domagoj Alagić, Mladen Karan
+% TakeLab, FER
+
+\documentclass[10pt, a4paper]{article}
+
+\usepackage{tar2016}
+
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+
+\title{Lexical Text Simplification}
+
+\name{Paula Gombar, Ivan Katanić} 
+
+\address{
+University of Zagreb, Faculty of Electrical Engineering and Computing\\
+Unska 3, 10000 Zagreb, Croatia\\ 
+\texttt{\{paula.gombar, ivan.katanic\}@fer.hr}\\
+}
+          
+         
+\abstract{ 
+In this paper, we consider the task of lexical text simplification by building a system to replace complex and hard-to-comprehend words with less complex semantically-matching words. We use several different approaches, combining both supervised and unsupervised methods relying on word vector representations, regular and simplified corpora, context-dependent and context-independent features. One supervised approach makes use of ranking SVM and different kernel functions, while the other obtains the best linear combination of features. Unsupervised approaches make use of linguistic features and external lexico-semantic resources such as WordNet. The system was tuned, trained and evaluated on the SemEval-2012 Task 1 dataset and outperforms two of three given baselines.
+}
+
+\begin{document}
+
+\maketitleabstract
+
+\section{Introduction}
+
+Lexical simplification is the task of finding  less complex semantically-appropriate words or phrases and replacing those that are difficult to comprehend, especially for certain groups of people such as non-native speakers, people with low literacy or intellectual disabilities, and language-impaired people.
+
+Common steps in a pipeline for a lexical simplification system include the following:
+\begin{enumerate}
+\item complexity analysis: finding out which words or phrases are considered complex,
+\item substitute lookup: retrieving adequate replacements, simpler than the original word or phrase, from a thesaurus or lexico-semantic resources,
+\item context-based ranking: ranking of substitutes to produce the final replacement.
+\end{enumerate}
+
+To give an example, let us consider the following sentence: ``The incisions will feel constricted for the first 24-48 hours.'' The system would first identify complex words, e.g. \textit{constricted}, then search for substitutes that might adequately replace it. Suppose the retrieved candidates were ``uncomfortable'', ``tight'', ``stretched'', ``compressed'' and ``constricted''. Finally, the system would score each of the candidates on simplicity and context-adequacy, rank them and determine the simplest one, e.g. ``tight'', and use it to replace the complex word, yielding the sentence ``The incisions will feel tight for the first 24-48 hours.''
+
+This paper mainly focuses on the third step, context-based ranking, as complexity analysis and substitute lookup have already been given in the SemEval-2012 Task 1 resources this paper is based on. The definition of SemEval-2012 Task 1 is, given a short context, a target word in English, and several substitutes for the target word that are deemed adequate for that context, rank these substitutes according to how “simple” they are, allowing ties.
+
+We decided to use several different approaches to solving this task, mixing both supervised and unsupervised methods, using external resources such as word vector representations, Simple Wikipedia, WordNet, linguistic features, as well as context-dependent and context-independent features.
+
+\section{Related work}
+
+There have been multiple different approaches to lexical text simplification. Before simplified corpora, the approach was based on substituting longer words with shorter and more frequent alternatives, such as in \citep{carroll1998practical,de2010text} and referred to lexico-semantic resources like WordNet \citep{fellbaum1998wordnet}.
+
+After the emergence of simplified corpora, most notably Simple Wikipedia, the focus was shifted to using this type of resource, either using context-aware unsupervised methods \citep{biran2011putting}, or supervised methods to learn substitutions from the sentence-aligned corpora \citep{horn2014learning}.
+
+Recent advantages in word vector representations \citep{pennington2014glove} have paved the path for unsupervised approaches that do not use simplified corpora, but regular corpora and vector representations \citep{glavavs2015simplifying}.
+
+\section{Dataset description}
+
+The dataset used in SemEval-2012 Task 1 originates from SemEval-2007 and the Lexical Substitution task. It is extracted from the English Internet Corpus of English \citep{sharoff2006creating}, and is a selection of sentences, or contexts. In total there are 2010 contexts which are divided into Trial and Test sets, consisting of 300 and 1710 contexts respectively. The datasets cover a total of 201 (mostly polysemous) target words, including nouns, verbs, adjectives and adverbs, and each of the target words is shown in 10 different contexts.
+
+Given the list of contexts and each respective list of substitutes, the annotators ranked substitutes for each individual context in ascending order of complexity. The Trial dataset was annotated by four people while the Test dataset was annotated by five people. In both cases each annotator tagged the complete dataset, and the inter-annotator agreement was computed using the kappa index with pairwise rank comparisons, the same metric being used for system evaluation. On the Trial dataset, a kappa index of 0.386 was found, while for the Test dataset, a kappa index of 0.398 was found. Regarding the low kappa scores, the highly subjective nature of the annotation task must be taken into account. It is also worth noticing that this agreement metric is highly sensitive to small differences in annotation, thus leading to overly pessimistic scores.
+
+Finally, here is an example of a sentence, or context, from the Trial dataset, as well as the gold-standard ranking of substitutions. \\
+\textbf{Sentence:} ``The Governor \textit{took} the big sheets of imitation parchment, glanced over them, signed his name to each  laid down the pen, and handed the papers across the table to Dreier.'' \\
+\textbf{Gold rankings}: \{get\} \{take\} \{pick up\} \{collect, grasp\} \{gather\}.
+
+\section{Feature extraction}
+
+The role of the features is to capture information about the applicability of the word in the context of the sentence as well as the simplicity of the word. We rank the simplification candidates according to several features, both context-dependent and context-independent.
+
+\textbf{Inverse word length.} It is a valid assumption that a word is more complex if it longer than another candidate. We use the inverse of the candidate's length, because in our system a higher score means the word or phrase is simpler.
+
+\textbf{Number of synsets in WordNet.} WordNet\footnote{\url{https://wordnet.princeton.edu}} is a lexico-semantic resource that groups together words based on their meanings, or synsets. The number of candidate's synsets correlates with interchangeability in several contexts, so a candidate with a higher number of synsets is considered to be simpler.
+
+\textbf{Frequency in Simple Wikipedia.} We obtained a list of word frequencies from an up-to-date Simple Wikipedia dump\footnote{\url{https://dumps.wikimedia.org/simplewiki/}}. Simple Wikipedia is primarily written using basic English, making it a useful resource for this task.
+
+\textbf{Frequency in Wikipedia.} We obtained a list of word frequencies from an English Wikipedia dump\footnote{\url{https://dumps.wikimedia.org/enwiki/}} from 2014. The assumption is that an often-used word must be simpler than words that are not so often used.
+
+\textbf{Corpus complexity.} As seen in \citep{biran2011putting}, corpus complexity is defined as the ratio of a candidate's frequency in Wikipedia and Simple Wikipedia:
+
+\[ C_w = \frac{f_{w, English}}{f_{w, Simple}} \]
+where $f_{w, c}$ is the frequency of candidate $w$ in corpus $c$. We use the inverse score, because we rank higher the simpler candidates.
+
+\textbf{Context similarity.} As seen in \citep{glavavs2015simplifying}, the idea is that the simplification candidates that are synonyms of the correct sense of the original word should be more semantically similar to the context of the original word. This feature is obtained by computing the semantic similarity of the simplification candidate and each content word from the original context. The semantic similarity of two words is computed as the cosine of the angle between their corresponding GloVe\footnote{\url{http://www-nlp.stanford.edu/data/glove.6B.200d.txt.gz}} vectors. In all experiments, we used 200-dimensional GloVe vectors pretrained on the English Wikipedia corpus. Formally defined:
+
+\[ csim(w, c) = \sum_{w' \in C(w)} cos(\mathbf{v_w}, \mathbf{v_{w'}}) \]
+where $C(w)$ is the set of context words of the original word $w$ and $\mathbf{v_w}$ is the GloVe vector of the word $w$.
+
+\textbf{Semantic similarity.} Similar to context similarity, this feature is obtained by computing the semantic similarity of the original word marked for replacement and the simplification candidate:
+
+\[ ssim(w, c) = cos(\mathbf{v_w}, \mathbf{v_{w'}}) \]
+where $\mathbf{v_w}$ is the GloVe vector of the original word $w$, and $\mathbf{v_w'}$ is the GloVe vector of the replacement candidate.
+
+\section{Methods used}
+
+We used a total of four different methods, three supervised and one unsupervised. When using a supervised approach, we optimized the algorithm's parameters using grid search and cross-validation. Cross-validation is performed by splitting the Trial dataset into a training set and validation set, the ratio being 70:30. The systems are then evaluated on the Test dataset.
+
+We initially used $SVM^{rank}$ described in \citep{joachims2006training}, but found the implementation too rigid to perform hyperparameter optimization. We ended up implementing our own version of a ranking SVM algorithm, with the help of SVM implementation in scikit-learn \citep{pedregosa2011scikit}.
+
+\begin{table*}
+\caption{Optimal hyperparameters for Ranking SVM with RBF kernel.}
+\label{tab:rbf-params}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Hyperparameter & Optimal value & Possible values \\
+\midrule
+Scaler & Standard &  StandardScaler, MinMaxScaler, Imputer \\
+PolynomialFeatures degree & 1 & 1, 2  \\
+$C$ & $2^5$ & $[2^{-15}, ..., 2^{8}]$ \\
+$\gamma$ & 0.00098 & $[2^{-15}, ..., 2^{8}]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table*}
+
+\textbf{Ranking SVM with RBF kernel.} Grid search and cross-validation produced the optimal hyperparameters shown in Table~\ref{tab:rbf-params}. The scaler parameter defines the method used to scale the feature array. Standard scaler first translates the data so the mean value is zero, then scales is so that the standard deviation is one, MinMax scaler scales and translates each feature between zero and one, and the Imputer is usually used to replace missing values, but in our case it is used as an identity transformation. PolynomialFeatures is used to add complexity to the model by considering nonlinear features. If the degree is 2, and we have features $x_1$ and $x_2$, the resulting feature array is $(1, x_1, x_2, x_1^2, x_1x_2, x_2^2)$.
+
+\begin{table*}
+\caption{Optimal hyperparameters for Ranking SVM with linear kernel.}
+\label{tab:lin-params}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Hyperparameter & Optimal value & Possible values \\
+\midrule
+Scaler & Standard &  StandardScaler, MinMaxScaler, Imputer \\
+PolynomialFeatures degree & 1 & 1, 2  \\
+$C$ & $2^4$ & $[2^{-15}, ..., 2^{8}]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table*}
+
+\textbf{Ranking SVM with linear kernel.} Similar to the previous method, the only difference is the kernel used in the SVM algorithm. Grid search and cross-validation produced the optimal hyperparameters shown in Table~\ref{tab:lin-params}. What is interesting is that the linear kernel outputs the coefficients belonging to each of the features. The following optimal linear coefficients were obtained:
+$ weights = (-0.355, -0.109, -0.296, 0.273, -0.041, -0.835,  0.004)$, whereas the order of features is as described beforehand.
+
+\begin{table*}
+\caption{Optimal hyperparameters for linear combination of features.}
+\label{tab:linear}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Feature & Weight \\
+\midrule
+Inverse word length & 1 \\
+WordNet synsets & 0 \\
+Simple Wikipedia frequency & 10 \\
+English Wikipedia frequency & 0 \\
+Corpus complexity & 0 \\
+Context similarity & 9 \\
+Semantic similarity & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table*}
+
+\textbf{Linear combination of features.} We used grid search to find the optimal combination of linear coefficients, similar to the output of ranking SVM with linear kernel. The optimal hyperparameters can be seen in Table~\ref{tab:linear}. Additionally, the optimal scaler used is MinMax scaler.
+
+\textbf{Unsupervised approach.} The unsupervised approach was more popular in SemEval-2012, eight out of twelve teams using it instead of a supervised one, as well as the winning team. The reason might be due to the limited number of training examples given. In this approach, we first scale the data using the MinMax scaler and then declare all coefficients as 1, so the resulting function is equivalent to obtaining the average of all features. We do not use cross validation in this approach, so after tuning the model on the Trial dataset, we evaluate it on the Test dataset.
+
+\section{Evaluation}
+Evaluation for all methods was done on the Test dataset, consisting of 1710 contexts. In the SemEval-2012 task description, three baselines were provided.
+
+\textbf{L-Sub Gold:} This baseline uses the gold-standard annotations from the Lexical Substitution corpus of SemEval-2007 as is. In other words, the ranking is based on the goodness of fit of substitutes for a context, as judged by human annotators. This method also serves to show that the Lexical Substitution and Lexical Simplification tasks are indeed different.
+
+\textbf{Random:} This baseline provides a randomized order of the substitutes for every context. The process of randomization is such that is allows the occurrence of ties.
+
+\textbf{Simple Freq.:} This simple frequency baseline uses the frequency of the substitutes as extracted from the Google Web 1T Corpus \citep{brants2006web} to rank candidate substitutes within each context.
+ 
+ The evaluation metric used is the same measure used for inter-annotator agreement, the metric based on the kappa index \citep{kohen1960coefficient}. It is used for both contrasting two human annotators and contrasting a system output to the average of human annotations that together forms the gold-standard and is defined as the following:
+\[ \kappa = \frac{P(A) - P(E)}{1 - P(E)} \]
+where $P(A)$ denotes the proportion of times the system output corresponds to the gold-standard, and $P(E)$ denotes the probability of agreement by chance between the two. Kappa is calculated for every pair of ranked items for a given context, and then averaged to get an overall kappa score:
+\[ \kappa = \frac{\sum_{n=1}^{|N|} \frac{P_n(A) - P_n(E)}{1 - P_na(E)}}{|N|} \]
+where $N$ is the total number of contexts, and $P_n(A)$ and $P_n(E)$ are calculated based on counts extracted from the data on the particular context $n$.
+
+\begin{table}
+\caption{Baseline kappa scores on Trial and Test datasets.}
+\label{tab:baseline}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+& Trial & Test \\
+\midrule
+L-Sub Gold & 0.050 & 0.106 \\
+Random & 0.016 & 0.012 \\
+Simple Freq. & 0.397 & 0.471 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Results in table~\ref{tab:baseline} show that the “Simple Freq.” baseline performs very strongly, despite being simple. In fact, it surpasses the average inter-annotator agreement on both Trial and Test datasets.
+
+\begin{table}
+\caption{Implemented methods kappa scores on the Test dataset.}
+\label{tab:res}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Method name & Test score \\
+\midrule
+Ranking SVM with RBF kernel & 0.461 \\
+Ranking SVM with linear kernel & 0.443 \\
+Linear combination of features & 0.459 \\
+Unsupervised approach & 0.313 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Results in table~\ref{tab:res} show that the ranking SVM with RBF kernel performs best, although all supervised methods perform similarly on the Test set, the unsupervised method being somewhat weaker. All four methods outperform two of the three given baselines. It is possible that the supervised approaches would outperform the ``Simple Freq.'' baseline if there were more training data available.
+
+\section{Conclusion}
+
+We presented four different methods in solving the lexical simplification task, using both context-dependent and context-independent features, as well as external resources such as state-of-the-art word vector representations and simplified corpora.
+
+The top-performing method in our approach was the ranking SVM with RBF kernel, although it is followed closely by linear combination of features and the ranking SVM with linear kernel. The unsupervised approach does not perform as well, but it outperforms two out of three given baselines.
+
+We believe that the performance of supervised approaches is likely to improve with larger training sets, and that the scarcity of training data is the main reason why the context-independent ``Simple Freq.'' baseline outperforms these methods. Additionally, the evaluation metric  is very susceptible to penalize slight changes, making it overly pessimistic about the system's performance.
+
+In the linear combination of features, the largest weight was given to Simple Wikipedia frequency, followed by context similarity. This shows that there is a very strong relation between distributional frequency of words and their perceived simplicity, as well as the importance context-dependent features and word vector representations. On the other hand, it appears that relying on the entire English Wikipedia corpus and lexico-semantic resources like WordNet do not have any impact on the system's performance.
+
+\bibliographystyle{tar2016}
+\bibliography{tar2016}
+
+\end{document}
+
