@@ -1,7 +1,7 @@
 \documentclass[utf8]{beamer}
 \usetheme{Boadilla}
 
-\title{Lexical text simplification}
+\title{Lexical Text Simplification}
 \author{Paula Gombar, Ivan Katanić}
 \institute{FER}
 \date{\today}
@@ -17,5 +17,182 @@
 \tableofcontents
 \end{frame}
 
+\section{Task definition}
+
+\begin{frame}
+\frametitle{SemEval-2012 Task 1}
+\begin{itemize}
+ \item finding less complex semantically-appropriate words or phrases and replacing those that are difficult to comprehend
+  \item common pipeline in such a system:
+  \begin{enumerate}
+    \item \textbf{complexity analysis:} finding out which words or phrases are considered complex
+    \item \textbf{substitute lookup:} retrieving adequate replacements, simpler than the original word or phrase
+    \item \textbf{context-based ranking:} ranking of substitutes to produce the final replacement
+  \end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Example}
+Sentence: \textit{The incisions will feel constricted for the first 24-48 hours.} \\
+We identify the word \textit{constricted} as complex, retrieve the possible substitutes: \\
+\{uncomfortable\} \{tight\} \{stretched\} \{compressed\} \{constricted\}. \\
+We score each candidate on simplicity and context-adequacy, rank them and determine the simplest one, e.g. \textit{tight}.
+\end{frame}
+
+\section{Features extracted}
+
+\begin{frame}
+\frametitle{Features extracted}
+\begin{itemize}
+\item \textbf{inverse word length}
+\item \textbf{number of synsets in WordNet}
+\begin{itemize}
+ \item i.e. the word \textit{fundamental} has the following synsets:
+ \begin{enumerate}
+  \item (n) fundamental (any factor that could be considered important to the understanding of a particular business)
+  \item (n) fundamental, fundamental frequency, first harmonic (the lowest tone of a harmonic series)
+ \end{enumerate}
+\end{itemize}
+\item \textbf{frequency in Simple Wikipedia}
+\item \textbf{frequency in Wikipedia}
+\item \textbf{corpus complexity}
+\[ C_w = \frac{f_{w, English}}{f_{w, Simple}} \]
+where $f_{w, c}$ is the frequency of candidate $w$ in corpus $c$. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\frametitle{Features extracted}
+\item \textbf{context similarity}
+\[ csim(w, c) = \sum_{w' \in C(w)} cos(\mathbf{v_c}, \mathbf{v_{w'}}) \]
+where $C(w)$ is the set of context words of the original word $w$ and $\mathbf{v_c}$ is the GloVe vector of the replacement candidate $c$. \\
+\item \textbf{semantic similarity}
+\[ ssim(w, c) = cos(\mathbf{v_w}, \mathbf{v_c}) \]
+where $\mathbf{v_w}$ is the GloVe vector of the original word $w$.
+\end{itemize}
+\end{frame}
+
+\section{Methods used}
+
+\begin{frame}
+\frametitle{Methods used}
+\textbf{Ranking SVM with RBF kernel.}
+
+\begin{table}
+\caption{Optimal hyperparameters for Ranking SVM with RBF kernel.}
+\label{tab:rbf-params}
+\begin{center}
+\begin{tabular}{l | l | l}
+Hyperparameter & Optimal value & Possible values \\
+\hline \hline
+Scaler & Standard &  Standard, MinMax, None \\
+PolyFeatures degree & 1 & 1, 2  \\
+$C$ & $2^5$ & $[2^{-15}, ..., 2^{8}]$ \\
+$\gamma$ & 0.00098 & $[2^{-15}, ..., 2^{8}]$ \\
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Ranking SVM with linear kernel.}
+
+\begin{table}
+\caption{Optimal hyperparameters for Ranking SVM with linear kernel.}
+\label{tab:rbf-params}
+\begin{center}
+\begin{tabular}{l | l | l}
+Hyperparameter & Optimal value & Possible values \\
+\hline \hline
+Scaler & Standard &  Standard, MinMax, None \\
+PolyFeatures degree & 1 & 1, 2  \\
+$C$ & $2^4$ & $[2^{-15}, ..., 2^{8}]$
+\end{tabular}
+\end{center}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Methods used}
+\textbf{Linear combination of features.}
+
+\begin{table}
+\caption{Optimal hyperparameters for linear combination of features.}
+\label{tab:linear-params}
+\begin{center}
+\begin{tabular}{l | l}
+Feature & Weight \\
+\hline \hline
+Inverse word length & 1 \\
+WordNet synsets & 0 \\
+Simple Wikipedia frequency & 10 \\
+English Wikipedia frequency & 0 \\
+Corpus complexity & 0 \\
+Context similarity & 9 \\
+Semantic similarity & 0 \\
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Unsupervised approach.} Scale the data using MinMax scaler, declare all coefficients as 1.
+\end{frame}
+
+\section{Evaluation}
+\begin{frame}
+ \frametitle{Baselines}
+\textbf{L-Sub Gold.} This baseline uses the gold-standard annotations from the Lexical Substitution corpus of SemEval-2007 as is. \\
+\textbf{Random} Randomizes the order, allowing ties. \\
+\textbf{Simple Freq.} Uses the frequency of the substitutes as extracted from the Google Web 1T Corpus.
+
+\begin{table}
+\caption{Baseline kappa scores on Trial and Test datasets.}
+\label{tab:baseline}
+\begin{center}
+\begin{tabular}{l|l|l}
+Baseline & Trial & Test \\
+\hline \hline
+L-Sub Gold & 0.050 & 0.106 \\
+Random & 0.016 & 0.012 \\
+Simple Freq. & \textbf{0.397} & \textbf{0.471} \\
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{frame}
+
+\begin{frame}
+ \frametitle{Results}
+
+\begin{table}
+\caption{Implemented methods kappa scores on the Test dataset.}
+\label{tab:res}
+\begin{center}
+\begin{tabular}{l|l}
+Method name & Test score \\
+\hline \hline
+Ranking SVM with RBF kernel & \textbf{0.461} \\
+Ranking SVM with linear kernel & 0.443 \\
+Linear combination of features & 0.459 \\
+Unsupervised approach & 0.313 \\
+\end{tabular}
+\end{center}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusion}
+\begin{itemize}
+ \item four different methods, using both context-dependent and context-independent features, as well as external resources such as state-of-the-art word vector representations and simplified corpora.
+  \item the performance of supervised approaches is likely to improve with larger training sets
+  \item very strong relation between distributional frequency of words and their perceived simplicity
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{The end}
+\begin{center}
+ Thank you! Any questions?
+\end{center}
+\end{frame}
 
 \end{document}
