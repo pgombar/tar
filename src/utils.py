@@ -12,7 +12,7 @@ import numpy as np
 import re
 
 
-def parse_text(text):
+def parse_text(text, stopword=False):
     """ 
     1. tokenize
     2. convert to lowercase
@@ -22,12 +22,13 @@ def parse_text(text):
 
     stops = stopwords.words('english')
     tokens = nltk.word_tokenize(text)
-    tokens = map(lambda f: f.lower(), tokens)
-    tokens = filter(lambda f: f not in stops, tokens)
+    if stopword == False:
+        tokens = map(lambda f: f.lower(), tokens)
+        tokens = filter(lambda f: f not in stops, tokens)
     return tokens
 
 
-def parse_input_file(input_dir):
+def parse_input_file(input_dir, stopwords=False):
     """ Parses 'contexts.xml' and 'substitutions' files.
     
     Takes the directory of input files the only argument.
@@ -44,18 +45,18 @@ def parse_input_file(input_dir):
         text = [c.strip() for c in x.itertext() if c.strip()]
         
         if len(text) == 3:
-            pre = parse_text(text[0])
-            sub = [' '.join(parse_text(text[1]))]
-            suf = parse_text(text[2])
+            pre = parse_text(text[0], True)
+            sub = [' '.join(parse_text(text[1], True))]
+            suf = parse_text(text[2], True)
             ret.append((pre + sub + suf, len(pre)))
         else:
             if len(text[0]) < len(text[1]):
-                sub = [' '.join(parse_text(text[0]))]
-                suf = parse_text(text[1])
+                sub = [' '.join(parse_text(text[0], True))]
+                suf = parse_text(text[1], True)
                 ret.append((sub + suf, 0))
             else:
-                pre = parse_text(text[0])
-                sub = [' '.join(parse_text(text[1]))]
+                pre = parse_text(text[0], True)
+                sub = [' '.join(parse_text(text[1], True))]
                 ret.append((pre + sub, len(pre)))
             
     subs = open(input_dir + 'substitutions').read()
